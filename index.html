@@ -11,7 +11,7 @@
   <body>
     <nav id="desktop-nav">
       <div class="logo">Personal portfolio</div>
-      <div>
+      <div  class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#profile">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -83,7 +83,7 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-about-container">
           <img
             src="./assets/Foto_Description.JPG"
             alt="Profile picture"
@@ -113,7 +113,7 @@
 
           </div>
           <div class="text-container">
-            <p>
+            <p style="text-align: justify;">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
               reprehenderit et laborum, rem, dolore eum quod voluptate
               exercitationem nobis, nihil esse debitis maxime facere minus sint
@@ -134,10 +134,10 @@
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
-      <div class="skills-details-container">
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="skills-sub-title">Programming</h2>
+            <h2 class="experience-sub-title">Programming</h2>
             <div class="article-container">
               <article>
                 <img
@@ -196,13 +196,13 @@
                   class="icon"
                 />
                 <div>
-                  <p>Assembly  <br /> (ASM)</p>
+                  <p>Assembly</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="skills-sub-title">Software and Tools</h2>
+            <h2 class="experience-sub-title">Software and Tools</h2>
             <div class="article-container">
               <article>
                 <img
@@ -267,7 +267,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="skills-sub-title">Industrial Robots</h2>
+            <h2 class="experience-sub-title">Industrial Robots</h2>
             <div class="article-container">
               <article>
                 <img
@@ -286,7 +286,7 @@
                   class="icon"
                 />
                 <div>
-                  <p>Universal Robots</p>
+                  <p>Epson</p>
                 </div>
               </article>
               <article>
@@ -306,17 +306,17 @@
                   class="icon"
                 />
                 <div>
-                  <p>Epson</p>
+                  <p>Universal Robots</p>
                 </div>
               </article>
             </div>
         </div>
       </div>
 
-      <div class="skills-details-container">
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="skills-sub-title">Mechanical Design</h2>
+            <h2 class="experience-sub-title">Mechanical Design</h2>
             <div class="article-container">
               <article>
                 <img
@@ -362,7 +362,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="skills-sub-title">Electronic Design</h2>
+            <h2 class="experience-sub-title">Electronic Design</h2>
             <div class="article-container">
               <article>
                 <img
@@ -372,6 +372,16 @@
                 />
                 <div>
                   <p>Proteus</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <p>LTspice</p>
                 </div>
               </article>
               <article>
@@ -397,7 +407,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="skills-sub-title">Soft Skills</h2>
+            <h2 class="experience-sub-title">Soft Skills</h2>
             <div class="article-container">
               <article>
                 <img
@@ -454,7 +464,7 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="skills-details-container">
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -464,14 +474,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Stylet 3D</h2>
+            <h2 class="experience-sub-title project-title">Stylet 3D</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=stylet3d'">
                 Read more
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -482,14 +488,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Q-Air</h2>
+            <h2 class="experience-sub-title project-title">Q-Air</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=qair'">
                 Read more
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -500,14 +502,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">ROCCO</h2>
+            <h2 class="experience-sub-title project-title">ROCCO</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=rocco'">
                 Read more
-              </button>
             </div>
           </div>
         </div>
@@ -521,14 +519,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Robot3T</h2>
+            <h2 class="experience-sub-title project-title">Robot3T</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=robot3t'">
                 Read more
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -539,14 +533,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">FILLBO</h2>
+            <h2 class="experience-sub-title project-title">FILLBO</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=fillbo'">
                 Read more
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -557,14 +547,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">GRAB-LAS</h2>
+            <h2 class="experience-sub-title project-title">GRAB-LAS</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=grablas'">
                 Read more
-              </button>
             </div>
           </div>
         </div>
@@ -597,6 +583,16 @@
           />
           <p><a href="https://www.linkedin.com/in/jcaselles/">JCaselles</a></p>
         </div>
+        <!-- 
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+33751344338">+33 7 51 34 43 38</a></p>
+        </div>
+        -->
       </div>
     </section>
     <footer>

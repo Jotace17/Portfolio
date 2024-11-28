@@ -37,17 +37,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-
-  /*
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  background-color: white; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000; 
-  */
-  
 }
+
 
 .nav-links {
   gap: 2rem;
@@ -184,6 +175,15 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  border-radius: 50%;  /* Hace que la imagen sea redonda */
+  overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
+}
+
+.section__pic-about-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
 .section__text {
@@ -239,18 +239,25 @@ section {
   border-radius: 2rem;
 }
 
+.btn-color-3 {
+  width: 15rem;
+}
+
 .btn-color-1,
-.btn-color-2 {
+.btn-color-2,
+.btn-color-3 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
-.btn-color-2:hover {
+.btn-color-2:hover,
+.btn-color-3:hover {
   cursor: pointer;
 }
 
 .btn-color-1,
-.btn-color-2:hover {
+.btn-color-2:hover,
+.btn-color-3:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -259,11 +266,13 @@ section {
   background: rgb(0, 0, 0);
 }
 
-.btn-color-2 {
+.btn-color-2,
+.btn-color-3 {
   background: none;
 }
 
-.btn-color-2:hover {
+.btn-color-2:hover,
+.btn-color-3:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
@@ -334,7 +343,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .experience-details-container {
@@ -376,9 +385,9 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 5rem;
+  width: 70%;
+  height: 70%;
 }
 
 .project-title {
@@ -430,6 +439,77 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+/* BOTONES "READ MORE" */
+.project-btn {
+  background-color: rgb(240, 240, 240);
+  color: rgb(53, 53, 53);
+  border: 1px solid rgb(163, 163, 163);
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border-color: rgb(53, 53, 53);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* TARJETAS DE PROYECTOS */
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: 1px solid rgb(163, 163, 163);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.details-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
+}
+
+.details-text-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  max-width: 800px;   /* Ancho máximo de 800 píxeles */
+}
+
+
+
+/* IMÁGENES DE PROYECTOS */
+.project-img {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-img2 {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  margin: auto 0;
+  border-radius: 1.5rem;  /* Hace que la imagen sea redonda */
+  overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
+}
+
+.project-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-containers {
+  gap: 3rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  display: flex;
+}
+
 
 /* FOOTER SECTION */
 
