@@ -7,11 +7,9 @@
     flex-wrap: wrap;
   }
   #contact,
-  #details,
   #projects {
     height: fit-content;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -39,33 +37,13 @@
   section {
     margin: 0 5%;
   }
-  .section-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .section__pic-about-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
   .about-containers {
     margin-top: 0;
-  }
-
-  #details,
-  .details-text-container {
-    max-width: 90%; /* Ajusta el ancho a un 90% del contenedor padre */
-  }
-
-  .details-container {
-    padding: 1rem; /* Reduce el padding */
   }
 }
 
@@ -79,9 +57,6 @@
     margin-bottom: 0;
   }
   article {
-    font-size: 1rem;
-  }
-  article2 {
     font-size: 1rem;
   }
   footer nav {
@@ -111,17 +86,7 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__pic-about-container {
     width: auto;
     height: 46vw;
     justify-content: center;
@@ -129,25 +94,10 @@
   .section__text__p2 {
     font-size: 1.25rem;
   }
-  .section__text__p3 {
-    font-size: 1.25rem;
-  }
-  
   .title {
     font-size: 2rem;
   }
   .text-container {
     text-align: justify;
   }
-
-  .details-text-container {
-    max-width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 0 1rem; /* Añade padding lateral para evitar que el contenido toque los bordes */
-  }
-
-  .details-container {
-    padding: 0.8rem; /* Padding aún más reducido */
-    border-radius: 1rem; /* Bordes más pequeños para pantallas pequeñas */
-  }
-
 }
