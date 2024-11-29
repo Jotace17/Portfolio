@@ -7,9 +7,11 @@
     flex-wrap: wrap;
   }
   #contact,
+  #details,
   #projects {
     height: fit-content;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -147,5 +149,5 @@
     padding: 0.8rem; /* Padding aún más reducido */
     border-radius: 1rem; /* Bordes más pequeños para pantallas pequeñas */
   }
-  
+
 }
