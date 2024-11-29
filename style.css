@@ -485,6 +485,10 @@ article2 {
 }
 
 /* TARJETAS DE PROYECTOS */
+#details {
+  position: relative;
+}
+
 .details-container {
   padding: 1.5rem;
   background: white;
