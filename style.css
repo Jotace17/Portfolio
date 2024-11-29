@@ -389,7 +389,7 @@ article .icon {
 
 article2 {
   display: flex;
-  width: 40rem;
+  width: 90%;
   font-size: 1rem;
   justify-content: left;
   gap: 0.5rem;

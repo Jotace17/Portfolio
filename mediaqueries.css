@@ -59,6 +59,9 @@
   article {
     font-size: 1rem;
   }
+  article2 {
+    font-size: 1rem;
+  }
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
@@ -98,6 +101,11 @@
     font-size: 2rem;
   }
   .text-container {
+    margin-top: 2rem;
+    text-align: justify;
+  }
+  .details-text-container {
+    margin-top: 2rem;
     text-align: justify;
   }
 }
