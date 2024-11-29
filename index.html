@@ -68,13 +68,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/in/jcaselles/'"
+            onclick="window.open('https://linkedin.com/in/jcaselles/', '_blank')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/Jotace17'"
+            onclick="window.open('https://github.com/Jotace17', '_blank')"
           />
         </div>
       </div>
@@ -114,13 +114,19 @@
           </div>
           <div class="text-container">
             <p style="text-align: justify;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I'm a passionate mechatronics engineer currently completing my Master's degree through the EU4M program. 
+              My journey has taken me across Colombia, Spain, and France, where I've had the opportunity to study, collaborate. 
+              These diverse experiences have not only deepened my technical knowledge 
+              but also broadened my perspective on innovation and problem-solving.
             </p>
+            <br>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;">
+              I thrive on challenges and aspire to achieve impactful milestones in my career. I'm excited to bring my skills and passion 
+              to your team and contribute to your company's success. Let's create something remarkable together!
+            </p>
+            
           </div>
         </div>
       </div>
@@ -474,7 +480,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Stylet 3D</h2>
+            <h2 class="experience-sub-title project-description">Stylet 3D</h2>
+            <p class="section__text__p3">Motion capture for high-precision robot control</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=stylet3d'">
                 Read more
@@ -488,21 +495,23 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Q-Air</h2>
+            <h2 class="experience-sub-title project-description">Q-Air</h2>
+            <p class="section__text__p3">Portable air quality device</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=qair'">
                 Read more
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="article-project-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/miniaturaRocco1.png"
                 alt="Project 3"
                 class="project-img"
               />
-            </div>
-            <h2 class="experience-sub-title project-title">ROCCO</h2>
+            </div> 
+            <h2 class="experience-sub-title project-description">ROCCO</h2>
+            <p class="section__text__p3">Telemanipulated robotic arms</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=rocco'">
                 Read more
@@ -519,7 +528,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Robot3T</h2>
+            <h2 class="experience-sub-title project-description">Robot3T</h2>
+            <p class="section__text__p3">Robot that plays tic-tac-toe</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=robot3t'">
                 Read more
@@ -533,7 +543,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">FILLBO</h2>
+            <h2 class="experience-sub-title project-description">FILLBO</h2>
+            <p class="section__text__p3">Flexible manufacturing system</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=fillbo'">
                 Read more
@@ -542,12 +553,13 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/miniaturaGrablas.png"
+                src="./assets/miniaturaGrablas3.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">GRAB-LAS</h2>
+            <h2 class="experience-sub-title project-description">GRAB-LAS</h2>
+            <p class="section__text__p3">Laser engraver machine</p>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='details.html?project=grablas'">
                 Read more
@@ -581,7 +593,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/jcaselles/">JCaselles</a></p>
+          <p><a href="https://www.linkedin.com/in/jcaselles/" target="_blank">JCaselles</a></p>
         </div>
         <!-- 
         <div class="contact-info-container">

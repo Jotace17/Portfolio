@@ -38,7 +38,7 @@
         <div class="details-text-container">
             <div class="text-container">
                 <h3 class="project-sub-title">Key Results</h3>
-                <article>
+                <article2>
                   <img
                     src="./assets/checkmark.png"
                     alt="Experience icon"
@@ -47,8 +47,8 @@
                   <div>
                     <p id="project-r1"></p>
                   </div>
-                </article>
-                <article>
+                </article2>
+                <article2>
                     <img
                       src="./assets/checkmark.png"
                       alt="Experience icon"
@@ -57,8 +57,8 @@
                     <div>
                       <p id="project-r2"></p>
                     </div>
-                  </article>
-                  <article>
+                  </article2>
+                  <article2>
                     <img
                       src="./assets/checkmark.png"
                       alt="Experience icon"
@@ -67,8 +67,8 @@
                     <div>
                       <p id="project-r3"></p>
                     </div>
-                  </article>
-                  <article>
+                  </article2>
+                  <article2>
                     <img
                       src="./assets/checkmark.png"
                       alt="Experience icon"
@@ -77,8 +77,8 @@
                     <div>
                       <p id="project-r4"></p>
                     </div>
-                  </article>
-                  <article>
+                  </article2>
+                  <article2>
                     <img
                       src="./assets/checkmark.png"
                       alt="Experience icon"
@@ -87,7 +87,7 @@
                     <div>
                       <p id="project-r5"></p>
                     </div>
-                  </article>
+                  </article2>
                   
             </div>
 
@@ -103,12 +103,11 @@
                     />
                 </div>
                 <div class="project-img2">
-                    <img 
-                    id="project-image-2" 
-                    src="" 
-                    alt="Project Image 2" 
-                    class="project-detail-img"
-                    />
+                  <img 
+                  id="project-image-2" 
+                  src="" 
+                  alt="Project GIF" 
+                  class="project-detail-img">
                 </div>
             </div>
           </div>
@@ -121,103 +120,103 @@
     const projects = {
         "stylet3d": {
             name: "Stylet 3D",
-            title: "Stylet 3D Device",
-            role: "Manager",
+            title: "Motion capture and gesture recognition of a pen for high-precision manipulation and Real-time control of a 6DOF industrial robot",
+            role: "Software leader",
             team: "4 people",
-            start: "2024",
-            duration: "6 months",
-            University: "SUPMICROTECH-ENSMM",
-            r1: "result 1",
-            r2: "result 2",
-            r3: "result 3",
-            r4: "result 4",
-            r5: "result 5",
-            images: ["./assets/Stylet1.png", "./assets/Stylet2.png"],
-            description: "Detailed description of the Stylet 3D project."
+            start: "10/2024",
+            duration: "Ongoing",
+            university: "SUPMICROTECH-ENSMM (France)",
+            r1: "CAD design of hergonomic pen",
+            r2: "Software for real-time position tracking",
+            r3: "in progress",
+            r4: "in progress",
+            r5: "in progress",
+            images: ["./assets/Stylet1.png", "./assets/videostylet3d.png"],
+            description: "This project focuses on advanced motion capture and gesture recognition of a tracking pen to achieve real-time control of a 6DOF industrial robot. Utilizing an Intel RealSense camera, the system precisely tracks the pen's movements and gestures, translating them into accurate robotic commands. \nThe technology supports scaled movements, enabling high-precision manipulation tasks across both micro and normal scales. This capability opens new possibilities for delicate operations, such as micro-assembly or fine-tuned industrial processes, enhancing control and flexibility in complex environments."
         },
         "qair": {
-            name: "Q-Air ",
+            name: "Q-Air",
             title: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
-            role: "Manager",
-            team: "4 people",
-            start: "2023",
+            role: "Project co-leader",
+            team: "2 people",
+            start: "10/2022",
             duration: "9 months",
-            university: "Universidad Autónoma del Caribe",
-            r1: "result 1",
-            r2: "result 2",
-            r3: "result 3",
-            r4: "result 4",
-            r5: "result 5",
-            images: ["./assets/Qair2.png", "./assets/Qair1.png"],
-            description: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling."
+            university: "Universidad Autónoma del Caribe (Colombia)",
+            r1: "Sensors selection and integration",
+            r2: "6 hours of autonomy thanks to battery and mobile network connection",
+            r3: "Error rate under 1.2% compared to fixed monitoring stations in the city",
+            r4: "Real time cloud storage through MQTT",
+            r5: "One software registration was obtained",
+            images: ["./assets/Qair1.png", "./assets/videoqair.gif"],
+            description: "This project focused on the design, assembly, and programming of a portable 6x6x8cm IoT device for monitoring of 6 types of air pollutants (CO, CO₂, NO₂, O₃, PM₂.₅, PM₁₀) and atmospheric variables such as temperature and humidity, with live location and cloud storage and visualization through blynk. Designed for the measurement of air quality in outdoor and indoor environments."
                                    
         },
         "rocco": {
             name: "ROCCO",
-            title: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
-            role: "Manager",
+            title: "Set of tele-manipulated 6DOF robotic arms for handling biological agents in pharmaceutical and scientific applications",
+            role: "Project leader in charge of software",
             team: "4 people",
-            start: "2023",
-            duration: "9 months",
-            university: "Universidad Autónoma del Caribe",
-            r1: "result 1",
-            r2: "result 2",
-            r3: "result 3",
-            r4: "result 4",
-            r5: "result 5",
-            images: ["./assets/Qair2.png", "./assets/Qair1.png"],
+            start: "08/2022",
+            duration: "5 months",
+            university: "Universidad Autónoma del Caribe (Colombia)",
+            r1: "CAD prototype with human arm morphology",
+            r2: "Software for control and data adquisition",
+            r3: "Real time wireless comunication via bluetooth and Arduino",
+            r4: "Designed and integrated custom PCBs",
+            r5: "Two software registration were obtained",
+            images: ["./assets/miniaturaRocco2.png", "./assets/videorocco.gif"],
             description: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling."
                                    
         },
         "robot3t": {
             name: "Robot3T",
-            title: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
-            role: "Manager",
-            team: "4 people",
-            start: "2023",
-            duration: "9 months",
-            university: "Universidad Autónoma del Caribe",
-            r1: "result 1",
-            r2: "result 2",
-            r3: "result 3",
-            r4: "result 4",
-            r5: "result 5",
-            images: ["./assets/miniaturaRobot3t.png", "./assets/Qair1.png"],
-            description: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling."
+            title: "3-DOF anthropomorphic robot with computer vision capable of autonomously playing tic-tac-toe",
+            role: "Mechanical design and software leader",
+            team: "6 people",
+            start: "01/2024",
+            duration: "5 months",
+            university: "Universidad de oviedo (Spain)",
+            r1: "CAD prototype",
+            r2: "Fabrication and assemby guide",
+            r3: "Computer vision software for robot auto-play",
+            r4: "Designed and integrated custom PCBs",
+            r5: "Successful communication between multiple microcontrollers",
+            images: ["./assets/Robot3t_2.png", "./assets/videorobot3t.gif"],
+            description: "his project involved the design, fabrication, assembly, and testing of an anthropomorphic robot with 3 degrees of freedom, specifically developed to play Tic-Tac-Toe against a human opponent. The process included detailed CAD design, the selection of appropriate electronic and mechanical components, the development of a custom PCB, and the creation of software to enable the robot to fulfill its function"
                                    
         },
         "fillbo": {
             name: "FILLBO",
-            title: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
-            role: "Manager",
+            title: "Flexible manufacturing system for plastic bottle filling",
+            role: "Team leader, in charge of desing and software",
             team: "4 people",
-            start: "2023",
-            duration: "9 months",
-            university: "Universidad Autónoma del Caribe",
-            r1: "result 1",
-            r2: "result 2",
-            r3: "result 3",
-            r4: "result 4",
-            r5: "result 5",
-            images: ["./assets/miniaturaFillbo2.jpg", "./assets/Qair2.png"],
-            description: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling."
+            start: "03/2022",
+            duration: "4 months",
+            university: "Universidad Autónoma del Caribe (Colombia)",
+            r1: "Component selection",
+            r2: "Oleoneumatic actuator design",
+            r3: "FMS design and assembly",
+            r4: "Electrical design and sensor integration",
+            r5: "One software registration was obtained",
+            images: ["./assets/miniaturaFillbo2.jpg", "./assets/videofillbo.gif"],
+            description: "This project focused on the design, assembly, and programming of a fully automated FMS for filling plastic bottles, consisting of 6 stations across 5 phases (detection, filling, sealing, verification, and classification), capable of filling 2 bottles per minute."
                                    
         },
         "grablas": {
             name: "GRAB-LAS",
-            title: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
-            role: "Manager",
+            title: "Low-cost laser engraving machine",
+            role: "Design leader",
             team: "4 people",
-            start: "2023",
-            duration: "9 months",
-            university: "Universidad Autónoma del Caribe",
-            r1: "result 1",
-            r2: "result 2",
-            r3: "result 3",
-            r4: "result 4",
-            r5: "result 5",
+            start: "04-2022",
+            duration: "3 months",
+            university: "Universidad Autónoma del Caribe (Colombia)",
+            r1: "Design of a protective enclosure with an eye-protection system",
+            r2: "Sensors and actuators selection and integration",
+            r3: "Prototype assembly",
+            r4: "User's manual and documentation",
+            r5: "One Software registration was obtained",
             images: ["./assets/miniaturaGrablas.png", "./assets/miniaturaGrablas2.png"],
-            description: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling."
+            description: "This project involved the design and construction of a low-cost laser engraving machine to enhance engraving, printing, and cutting processes on various materials. Leveraging the precision and versatility of laser technology, this machine offers improved detail and adaptability over traditional mechanical engraving methods."
                                    
         },
         // Add more projects as needed
