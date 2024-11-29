@@ -504,7 +504,7 @@ article .icon {
 }
 
 .project-containers {
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
   display: flex;
