@@ -186,6 +186,13 @@ section {
   margin: auto 0;
 }
 
+.section__pic-map-container {
+  display: flex;
+  height: 120%;
+  width: 120%;
+  margin: auto 0;
+}
+
 .section__text {
   align-self: center;
   text-align: center;
