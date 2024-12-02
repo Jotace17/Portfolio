@@ -98,6 +98,12 @@
     border-radius: 50%;  /* Hace que la imagen sea redonda */
     overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
   }
+  .section__pic-map-container {
+    width: auto;
+    justify-content: center;
+    border-radius: 10%;  /* Hace que la imagen sea redonda */
+    overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
+  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
