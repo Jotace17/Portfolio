@@ -105,10 +105,14 @@
     overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
   }
   .section__pic-map-container {
-    width: fit-content;
-    justify-content: center;
-    border-radius: 10%;  /* Hace que la imagen sea redonda */
-    overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
+    display: flex;
+    width: 100%;                /* La imagen ocupa el 100% del ancho del contenedor */
+    max-width: 100%;            /* Asegura que no supere el ancho del contenedor */
+    height: auto;               /* Ajusta la altura automáticamente según la proporción */
+    margin: 0 auto;             /* Centra el contenedor si es necesario */
+    border-radius: 10%;  
+    overflow: hidden;           /* Mantiene la imagen dentro de los bordes redondeados */
+    object-fit: cover;
   }
   .section__text__p2 {
     font-size: 1.25rem;

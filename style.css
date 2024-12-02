@@ -192,7 +192,8 @@ section {
   width: 120%;
   margin: auto 0;
   border-radius: 10%;  
-  overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
+  overflow: hidden;    
+
 }
 
 .section__text {
