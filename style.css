@@ -188,12 +188,17 @@ section {
 
 .section__pic-map-container {
   display: flex;
-  height: 120%;
-  width: 120%;
+  height: auto;
+  width: 100%;
   margin: auto 0;
   border-radius: 10%;  
   overflow: hidden;    
 
+}
+
+.section__pic-map-container img {
+  width: 100%;          /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
 }
 
 .section__text {

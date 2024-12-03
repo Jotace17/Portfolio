@@ -10,6 +10,24 @@
   #projects {
     height: fit-content;
   }
+
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-map-container {
+    display: flex;
+    width: 90%;                /* La imagen ocupa el 100% del ancho del contenedor */
+    max-width: 90%;            /* Asegura que no supere el ancho del contenedor */
+    height: auto;               /* Ajusta la altura automáticamente según la proporción */
+    margin: 0 auto;             /* Centra el contenedor si es necesario */
+    border-radius: 1%;  
+    overflow: hidden;           /* Mantiene la imagen dentro de los bordes redondeados */
+    object-fit: cover;
+  }
+  .section__pic-map-container img {
+    width: 100%;          /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,11 +63,20 @@
     overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
   }
   .section__pic-map-container {
-    width: fit-content;
-    justify-content: center;
-    border-radius: 10%;  /* Hace que la imagen sea redonda */
-    overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
+    display: flex;
+    width: 100%;                /* La imagen ocupa el 100% del ancho del contenedor */
+    max-width: 100%;            /* Asegura que no supere el ancho del contenedor */
+    height: auto;               /* Ajusta la altura automáticamente según la proporción */
+    margin: 0 auto;             /* Centra el contenedor si es necesario */
+    border-radius: 1%;  
+    overflow: hidden;           /* Mantiene la imagen dentro de los bordes redondeados */
+    object-fit: cover;
   }
+  .section__pic-map-container img {
+    width: 100%;          /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
+  }
+
   .about-containers {
     margin-top: 0;
   }
@@ -110,9 +137,13 @@
     max-width: 100%;            /* Asegura que no supere el ancho del contenedor */
     height: auto;               /* Ajusta la altura automáticamente según la proporción */
     margin: 0 auto;             /* Centra el contenedor si es necesario */
-    border-radius: 10%;  
+    border-radius: 1%;  
     overflow: hidden;           /* Mantiene la imagen dentro de los bordes redondeados */
     object-fit: cover;
+  }
+  .section__pic-map-container img {
+    width: 90%;          /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
   }
   .section__text__p2 {
     font-size: 1.25rem;
