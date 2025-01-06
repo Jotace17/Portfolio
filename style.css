@@ -152,13 +152,15 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 auto;
+  padding: 0 2%;
   box-sizing: border-box;
   min-height: fit-content;
 }
 
 .section-container {
   display: flex;
+  margin: 0 auto;
 }
 
 /* PROFILE SECTION */
@@ -181,9 +183,24 @@ section {
 
 .section__pic-about-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 90%;
   margin: auto 0;
+
+}
+
+picture {
+  display: flex;
+  width: 350px;                /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto;               /* Ajusta la altura automáticamente según la proporción */
+  margin: 0 auto;             /* Centra el contenedor si es necesario */
+  border-radius: 1%;  
+  overflow: hidden;           /* Mantiene la imagen dentro de los bordes redondeados */
+  object-fit: cover;
+}
+.about-pic {
+  width: 350px;          /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
 }
 
 .section__pic-map-container {
@@ -305,6 +322,8 @@ section {
 
 #about {
   position: relative;
+  max-width: 1300px; /* Define el ancho máximo */
+  margin: 0 auto;
 }
 
 .about-containers {
@@ -360,6 +379,8 @@ section {
 
 #experience {
   position: relative;
+  max-width: 1300px; /* Define el ancho máximo */
+  margin: 0 auto;
 }
 
 .experience-sub-title {
@@ -417,6 +438,8 @@ article2 {
 
 #projects {
   position: relative;
+  max-width: 1300px; /* Define el ancho máximo */
+  margin: 0 auto;
 }
 
 .color-container {
@@ -524,7 +547,7 @@ article2 {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  max-width: 800px;   /* Ancho máximo de 800 píxeles */
+  max-width: 800;   /* Ancho máximo de 800 píxeles */
 }
 
 
