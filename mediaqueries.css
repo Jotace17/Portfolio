@@ -111,6 +111,7 @@
   }
   
   picture {
+    display: flex;
     width: 100%;                /* La imagen ocupa el 100% del ancho del contenedor */
     max-width: 100%;            /* Asegura que no supere el ancho del contenedor */
     height: auto;               /* Ajusta la altura automáticamente según la proporción */
@@ -194,6 +195,7 @@
   }
 
   picture {
+    display: flex;
     width: 100%;                /* La imagen ocupa el 100% del ancho del contenedor */
     max-width: 100%;            /* Asegura que no supere el ancho del contenedor */
     height: auto;               /* Ajusta la altura automáticamente según la proporción */
