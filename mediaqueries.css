@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -17,7 +17,7 @@
   .section__pic-map-container {
     display: flex;
     width: 90%;                /* La imagen ocupa el 100% del ancho del contenedor */
-    max-width: 90%;            /* Asegura que no supere el ancho del contenedor */
+    max-width: 1000px;            /* Asegura que no supere el ancho del contenedor */
     height: auto;               /* Ajusta la altura automáticamente según la proporción */
     margin: 0 auto;             /* Centra el contenedor si es necesario */
     border-radius: 1%;  
