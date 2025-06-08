@@ -328,8 +328,8 @@ picture {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
 
 .about-details-container {
@@ -360,11 +360,20 @@ picture {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .section-container {
   gap: 4rem;
   height: 80%;
+  align-items: flex-start; 
+}
+.details-columns-container {
+  display: flex;
+  margin: 0 auto;
+  gap: 4rem;
+  height: 80%;
+  align-items: flex-start; 
 }
 
 .section__pic-container {
@@ -388,6 +397,8 @@ picture {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  max-width: 1000px; /* Ancho máximo de 1000 píxeles */
 }
 
 .experience-details-container {
@@ -414,6 +425,19 @@ picture {
   justify-content: space-around; /* space-around */
 }
 
+.key-results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* spacing between items */
+  align-items: flex-start; /* align to the left */
+  width: 100%;
+}
+.key-results-container article {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
 article {
   display: flex;
   width: 10rem;
@@ -547,11 +571,68 @@ article2 {
   justify-content: center;
   flex-direction: column;
   display: flex;
+  max-width: 500px;   /* Ancho máximo de 500 píxeles */
+}
+
+.text-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
   max-width: 800;   /* Ancho máximo de 800 píxeles */
 }
 
 
+/*CARRUSEL*/
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
 
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 0.5rem;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.project-btn-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
 /* IMÁGENES DE PROYECTOS */
 .project-img3 {
   border-radius: 1.5rem;
@@ -581,6 +662,21 @@ article2 {
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
   display: flex;
+}
+
+/*DETAIL PROJECTS DESCRIPTION*/
+#details {
+  position: relative;
+  max-width: 1200px; /* Define el ancho máximo */
+  margin: 10px auto 0 auto;
+}
+.details-subtitle {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.1rem;
+  margin-top: 1rem;
+  max-width: 1000px; /* Ancho máximo de 1000 píxeles */
 }
 
 

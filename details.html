@@ -9,113 +9,81 @@
 </head>
 <body>
 
+
 <section id="details">
-    <h2 class="experience-sub-title">Project <span id="project-name"></span></h2>
-      <div class="section-container">
-        <div class="details-text-container">
-            
-            <div class="text-section">
-                <h3 class="project-sub-title">Title</h3>
-                <p style="text-align: justify;"><span id="project-title"></span></p>
-                <br>
-                <h3 class="project-sub-title">Description</h3>
-                <p style="text-align: justify;"><span id="project-description"></span></p>
-            </div>
+  <h2 class="details-subtitle">Project <span id="project-name"></span></h2>
+  <div class="details-columns-container">
 
-            <br>
-            <h3 class="project-sub-title">General information</h3>
-            <div class="about-containers"> <!-- project-containers -->
-                    <div class="text-section"> 
-                        <p><strong>Role:</strong> <span id="project-role"></span></p>
-                        <p><strong>Team size:</strong> <span id="project-team"></span></p>
-                    </div>
-                    <div class="text-section">
-                        <p><strong>Start date:</strong> <span id="project-start"></span></p>
-                        <p><strong>duration:</strong> <span id="project-duration"></span></p>
-                    </div>                
-            </div>
-            <p><strong>Associeted to:</strong> <span id="project-university"><br></span></p>
+    <!-- LEFT COLUMN -->
+    <div class="details-text-container">
+      <h3 class="project-sub-title">Title</h3>
+      <p style="text-align: justify;"><span id="project-title"></span></p>
+      <br>
+      <h3 class="project-sub-title">Description</h3>
+      <p style="text-align: justify;"><span id="project-description"></span></p>
+      
+      <br>
+      <h3 class="project-sub-title">General information</h3>
+      <div class="about-containers"> <!-- project-containers -->
+        <div class="text-section"> 
+          <p><strong>Role:</strong> <span id="project-role"></span></p>
+          <p><strong>Team size:</strong> <span id="project-team"></span></p>
         </div>
-        <div class="details-text-container">
-              <div class="text-container">
-                <h3 class="project-sub-title">Key Results</h3>
-                <article2>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <p id="project-r1"></p>
-                  </div>
-                </article2>
-                <article2>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <p id="project-r2"></p>
-                    </div>
-                </article2>
-                <article2>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <p id="project-r3"></p>
-                    </div>
-                  </article2>
-                  <article2>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <p id="project-r4"></p>
-                    </div>
-                  </article2>
-                  <article2>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <p id="project-r5"></p>
-                    </div>
-                  </article2>
-                  
-                </div>
+        <div class="text-section">
+          <p><strong>Start date:</strong> <span id="project-start"></span></p>
+          <p><strong>duration:</strong> <span id="project-duration"></span></p>
+        </div>                
+      </div>
+      <p><strong>Associeted to:</strong> <span id="project-university"><br></span></p>
+    </div>
 
-            <br>
-            <h3 class="project-sub-title">Media</h3>
-            <div class="about-containers">
-                <div class="project-img2">
-                    <img 
-                    id="project-image-1" 
-                    src="" 
-                    alt="Project Image 1" 
-                    class="project-detail-img"
-                    />
-                </div>
-                <div class="project-img2">
-                  <img 
-                  id="project-image-2" 
-                  src="" 
-                  alt="Project GIF" 
-                  class="project-detail-img">
-                </div>
-            </div>
-          </div>
-         </div>
-    <button class="btn btn-color-3 project-btn" onclick="location.href='index.html#projects'">Back to Projects</button>
-    
+    <!-- RIGHT COLUMN -->
+    <div class="details-text-container">
+      <h3 class="project-sub-title">Key Results</h3>
+      <div class="key-results-container">
+        <article>
+          <img src="./assets/icons/checkmark.png" alt="Check icon" class="icon" />
+          <p id="project-r1"></p>
+        </article>
+        <article>
+          <img src="./assets/icons/checkmark.png" alt="Check icon" class="icon" />
+          <p id="project-r2"></p>
+        </article>
+        <article>
+          <img src="./assets/icons/checkmark.png" alt="Check icon" class="icon" />
+          <p id="project-r3"></p>
+        </article>
+        <article>
+          <img src="./assets/icons/checkmark.png" alt="Check icon" class="icon" />
+          <p id="project-r4"></p>
+        </article>
+        <article>
+          <img src="./assets/icons/checkmark.png" alt="Check icon" class="icon" />
+          <p id="project-r5"></p>
+        </article>
+      </div>
+      
+      <br>
+      <h3 class="project-sub-title">Media</h3>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <img id="project-image-1" src="" alt="Project Image 1" class="carousel-image" />
+          <img id="project-image-2" src="" alt="Project GIF" class="carousel-image" />
+        </div>
+        <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="project-btn-container">
+    <button class="btn btn-color-3 project-btn" onclick="location.href='index.html#projects'">
+      Back to Projects
+    </button>
+  </div>
 </section>
+
 
 <script>
     // Define project details
