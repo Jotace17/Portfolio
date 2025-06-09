@@ -186,8 +186,8 @@
   }
   .section__pic-about-container {
     display: flex;
-    width: 90%;                /* La imagen ocupa el 100% del ancho del contenedor */
-    max-width: 90%;            /* Asegura que no supere el ancho del contenedor */
+    width: 70%;                /* La imagen ocupa el 100% del ancho del contenedor */
+    max-width: 70%;            /* Asegura que no supere el ancho del contenedor */
     height: auto;               /* Ajusta la altura automáticamente según la proporción */
     margin: 5px auto;             /* Centra el contenedor si es necesario */
     border-radius: 1%;  
@@ -195,7 +195,7 @@
     object-fit: cover;
   }
   .section__pic-about-container img {
-    width: 90%;          /* La imagen ocupa el 100% del ancho del contenedor */
+    width: 70%;          /* La imagen ocupa el 100% del ancho del contenedor */
     height: auto;         /* La altura se ajusta automáticamente para mantener la proporción */
   }
 

@@ -184,8 +184,8 @@ section {
 .section__pic-about-container {
   display: flex;
   height: auto;
-  width: 90%;
-  margin: auto 0;
+  width: 50%;
+  margin: 1 0;
 
 }
 
@@ -244,6 +244,7 @@ picture {
 .title {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 #socials-container {
