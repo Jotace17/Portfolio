@@ -12,6 +12,11 @@
     height: fit-content;
   }
 
+   .logo-strip {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   section {
     margin: 0 5%;
   }
@@ -69,6 +74,17 @@
   .arrow {
     display: none;
   }
+  
+  .logo-strip {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+    .details-profile-container {
+    margin: 0 5%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   section,
   .section-container {
     height: fit-content;
@@ -140,6 +156,10 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+  .logo-strip {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   }
   article {
     font-size: 1rem;
@@ -248,7 +268,7 @@
     margin-bottom: 1rem;
     font-size: 1.25rem;
   }
-
+  .details-profile-container,
   .details-columns-container {
     margin: 0 5%;
     flex-direction: column;

@@ -147,6 +147,44 @@ a:hover {
   transform: none;
 }
 
+.logo-strip {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.logo-track {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  animation: scroll 40s linear infinite;
+}
+
+.logo-track img {
+  height: 20px;
+  margin: 0 2rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo-track img:hover {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* SECTIONS */
 
 section {
@@ -167,10 +205,12 @@ section {
 
 #profile {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
+
 
 .section__pic-container {
   display: flex;
@@ -244,7 +284,7 @@ picture {
 .title {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 #socials-container {
@@ -373,7 +413,6 @@ picture {
   display: flex;
   margin: 0 auto;
   gap: 4rem;
-  height: 80%;
   align-items: flex-start; 
 }
 
@@ -385,6 +424,13 @@ picture {
   overflow: hidden;    /* Asegura que la imagen se recorta dentro del círculo */
 }
 
+#mapa {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1300px; /* Define el ancho máximo */
+
+}
 /* EXPERIENCE SECTION */
 
 #experience {
