@@ -150,7 +150,7 @@ a:hover {
 .logo-strip {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  height: 20px;
+  height: 40px;
   overflow: hidden;
   position: relative;
   background: white;
@@ -166,7 +166,7 @@ a:hover {
 }
 
 .logo-track img {
-  height: 20px;
+  height: 40px;
   margin: 0 2rem;
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -428,7 +428,7 @@ picture {
   position: relative;
   flex-direction: column;
   justify-content: center;
-  max-width: 1300px; /* Define el ancho máximo */
+  max-width: 100%; /* Define el ancho máximo */
 
 }
 /* EXPERIENCE SECTION */
@@ -620,7 +620,6 @@ article2 {
   display: flex;
   max-width: 500px;   /* Ancho máximo de 500 píxeles */
 }
-
 .text-container {
   justify-content: center;
   flex-direction: column;

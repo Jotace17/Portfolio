@@ -79,7 +79,7 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-    .details-profile-container {
+  .details-profile-container {
     margin: 0 5%;
     flex-direction: column;
     gap: 2rem;
@@ -258,6 +258,7 @@
     margin-top: 1rem;
     text-align: justify;
   }
+  .details-columns-container,
   .details-text-container {
     margin-top: 5px;
     text-align: justify;
@@ -274,7 +275,11 @@
     flex-direction: column;
     gap: 2rem;
   }
+  .details-columns-container{
+    width: 100%;
+    align-items: flex;
 
+  }
   .details-text-container {
     width: 100%;
     align-items: flex-start;
