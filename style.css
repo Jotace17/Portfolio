@@ -540,6 +540,14 @@ article2 {
   border-color: rgb(163, 163, 163);
 }
 
+/* AWARDS SECTION */
+
+#awards {
+  position: relative;
+  max-width: 1300px; /* Define el ancho máximo */
+  margin: 0 auto;
+}
+
 /* CONTACT */
 
 #contact {
