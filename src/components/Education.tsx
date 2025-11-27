@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import WorldMap from "./WorldMap";
 
 const education = [
   {
@@ -25,13 +26,18 @@ const Education = () => {
   return (
     <section className="py-24 relative" id="education">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="space-y-4 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Academic Path</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full" />
           </div>
+
+          {/* World Map */}
+          <div className="mb-16">
+            <WorldMap />
+          </div>
           
-          <div className="space-y-8">
+          <div className="space-y-8 max-w-4xl mx-auto">
             {education.map((item, index) => (
               <div 
                 key={index}

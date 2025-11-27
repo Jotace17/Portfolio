@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -8,56 +8,71 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-radial" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <div className="inline-block">
-            <span className="px-4 py-2 rounded-full bg-surface border border-border text-sm text-muted-foreground">
-              Available for opportunities
-            </span>
+        <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
+          {/* Profile Photo */}
+          <div className="flex justify-center">
+            <div className="w-40 h-40 rounded-full border-4 border-primary bg-muted overflow-hidden shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                alt="Johnathan Caselles"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Engineering
-            <span className="block bg-gradient-primary bg-clip-text text-transparent">
-              Excellence
-            </span>
-          </h1>
+          <div className="space-y-4">
+            <p className="text-lg text-muted-foreground">Hello, I'm</p>
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground">
+              Johnathan Caselles
+            </h1>
+            <p className="text-xl md:text-2xl bg-gradient-primary bg-clip-text text-transparent font-semibold">
+              MSc. in Mechatronic and Robotics Engineering
+            </p>
+          </div>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Building innovative solutions through cutting-edge technology and precise engineering
-          </p>
-          
-          <div className="flex flex-wrap gap-4 justify-center items-center pt-4">
+          <div className="flex flex-wrap gap-3 justify-center items-center pt-4">
             <Button size="lg" className="group bg-primary text-primary-foreground hover:bg-primary/90">
-              View Projects
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Download className="mr-2 h-4 w-4" />
+              CV in English
+            </Button>
+            <Button size="lg" className="group bg-primary text-primary-foreground hover:bg-primary/90">
+              <Download className="mr-2 h-4 w-4" />
+              CV en français
             </Button>
             <Button size="lg" variant="outline" className="border-border hover:bg-surface-hover">
-              Contact Me
+              Contact Info
             </Button>
           </div>
           
-          <div className="flex gap-4 justify-center pt-8">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors"
-            >
-              <Github className="h-5 w-5" />
-            </a>
+          <div className="flex gap-4 justify-center pt-6">
             <a 
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors"
+              aria-label="LinkedIn profile"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-5 w-5 text-foreground" />
             </a>
             <a 
-              href="mailto:contact@example.com"
+              href="https://github.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors"
+              aria-label="Github profile"
             >
-              <Mail className="h-5 w-5" />
+              <Github className="h-5 w-5 text-foreground" />
+            </a>
+            <a 
+              href="https://orcid.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors flex items-center justify-center"
+              aria-label="ORCID profile"
+            >
+              <svg className="h-5 w-5 text-foreground" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 8.24c.507 0 .919-.412.919-.919 0-.506-.412-.918-.919-.918-.506 0-.918.412-.918.918 0 .507.412.919.918.919zm-.424 1.548v6.856h1.716v-6.856H6.945zm3.684 0v6.856h1.716v-3.77c0-1.442.85-2.235 2.057-2.235 1.077 0 1.674.673 1.674 1.893v4.112h1.716v-4.473c0-2.052-1.164-3.259-3.061-3.259-1.222 0-2.078.615-2.386 1.317h-.034v-1.441h-1.682z"/>
+              </svg>
             </a>
           </div>
         </div>
