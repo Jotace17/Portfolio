@@ -11,7 +11,7 @@ const logos = [
 
 const LogoSlider = () => {
   return (
-    <div className="w-full overflow-hidden py-8 border-t border-border bg-surface/50">
+    <div className="w-full overflow-hidden py-8">
       <div className="flex animate-scroll">
         {/* First set of logos */}
         {logos.map((logo, index) => (

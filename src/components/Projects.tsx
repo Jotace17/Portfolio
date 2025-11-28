@@ -1,57 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
-
-const projects = [
-  {
-    title: "Distributed Task Scheduler",
-    description: "A scalable microservices-based task scheduling system with real-time monitoring and fault tolerance. Built with Go, Kubernetes, and Redis.",
-    tags: ["Go", "Kubernetes", "Redis", "Docker"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop"
-  },
-  {
-    title: "AI-Powered Analytics Dashboard",
-    description: "Real-time analytics platform with machine learning predictions. Features include data visualization, automated reporting, and anomaly detection.",
-    tags: ["React", "Python", "TensorFlow", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-  },
-  {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with payment integration, inventory management, and order tracking. Handles 100K+ daily transactions.",
-    tags: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop"
-  },
-  {
-    title: "Real-Time Collaboration Tool",
-    description: "WebSocket-based collaboration platform enabling real-time document editing, chat, and video conferencing for distributed teams.",
-    tags: ["Vue.js", "WebSocket", "WebRTC", "Express"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
-  },
-  {
-    title: "IoT Monitoring System",
-    description: "Cloud-based IoT platform for monitoring sensor data from industrial equipment. Includes alerting, data aggregation, and predictive maintenance.",
-    tags: ["AWS IoT", "Python", "InfluxDB", "Grafana"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop"
-  },
-  {
-    title: "DevOps Automation Suite",
-    description: "Comprehensive CI/CD pipeline automation tool with infrastructure as code, automated testing, and deployment orchestration.",
-    tags: ["Terraform", "Jenkins", "Ansible", "Docker"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    image: "https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?w=800&h=600&fit=crop"
-  }
-];
+import { ArrowRight, Github } from "lucide-react";
+import { projects } from "@/data/projects";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -114,10 +65,10 @@ const Projects = () => {
                     className="bg-primary text-primary-foreground hover:bg-primary/90"
                     asChild
                   >
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </a>
+                    <Link to={`/projects/${project.id}`}>
+                      <ArrowRight className="h-4 w-4 mr-2" />
+                      Read More
+                    </Link>
                   </Button>
                 </div>
                 </div>
