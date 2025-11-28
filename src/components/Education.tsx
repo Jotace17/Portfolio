@@ -27,9 +27,9 @@ const Education = () => {
     <section className="py-24 relative" id="education">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-4 mb-12">
+          <div className="space-y-4 mb-12 text-center">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Academic Path</h2>
-            <div className="h-1 w-20 bg-gradient-primary rounded-full" />
+            <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
           </div>
 
           {/* World Map */}

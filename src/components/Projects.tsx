@@ -58,12 +58,12 @@ const Projects = () => {
     <section className="py-24 relative" id="projects">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-4 mb-12">
+          <div className="space-y-4 mb-12 text-center">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Featured Projects</h2>
-            <div className="h-1 w-20 bg-gradient-primary rounded-full" />
+            <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card 
                 key={index}

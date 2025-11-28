@@ -1,38 +1,42 @@
-const LogoSlider = () => {
-  const tools = [
-    { name: "Python", icon: "🐍" },
-    { name: "MATLAB", icon: "📊" },
-    { name: "C++", icon: "⚙️" },
-    { name: "ROS", icon: "🤖" },
-    { name: "SolidWorks", icon: "🔧" },
-    { name: "AutoCAD", icon: "📐" },
-    { name: "Arduino", icon: "⚡" },
-    { name: "Raspberry Pi", icon: "🥧" },
-    { name: "LabVIEW", icon: "🔬" },
-    { name: "Git", icon: "📦" },
-  ];
+const logos = [
+  { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "MATLAB", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" },
+  { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "ROS", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg" },
+  { name: "Docker", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "Linux", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+  { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+];
 
+const LogoSlider = () => {
   return (
-    <div className="relative py-8 overflow-hidden border-t border-border">
-      <div className="flex gap-12 animate-scroll">
-        {/* First set */}
-        {tools.map((tool, index) => (
-          <div
+    <div className="w-full overflow-hidden py-8 border-t border-border bg-surface/50">
+      <div className="flex animate-scroll">
+        {/* First set of logos */}
+        {logos.map((logo, index) => (
+          <div 
             key={`first-${index}`}
-            className="flex items-center gap-3 px-6 py-3 bg-surface rounded-lg border border-border whitespace-nowrap"
+            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-300"
           >
-            <span className="text-2xl">{tool.icon}</span>
-            <span className="font-medium text-foreground">{tool.name}</span>
+            <img 
+              src={logo.url} 
+              alt={logo.name}
+              className="h-12 w-12 object-contain"
+            />
           </div>
         ))}
         {/* Duplicate set for seamless loop */}
-        {tools.map((tool, index) => (
-          <div
+        {logos.map((logo, index) => (
+          <div 
             key={`second-${index}`}
-            className="flex items-center gap-3 px-6 py-3 bg-surface rounded-lg border border-border whitespace-nowrap"
+            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-300"
           >
-            <span className="text-2xl">{tool.icon}</span>
-            <span className="font-medium text-foreground">{tool.name}</span>
+            <img 
+              src={logo.url} 
+              alt={logo.name}
+              className="h-12 w-12 object-contain"
+            />
           </div>
         ))}
       </div>
