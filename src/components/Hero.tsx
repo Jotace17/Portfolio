@@ -10,7 +10,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10 flex-1 flex items-center justify-center">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="grid md:grid-cols-2 gap-12 items-center justify-center animate-fade-in">
+          <div className="grid md:grid-cols-2 gap-6 items-center justify-center animate-fade-in">
             {/* Profile Photo - Left Side */}
             <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-muted overflow-hidden shadow-lg">
