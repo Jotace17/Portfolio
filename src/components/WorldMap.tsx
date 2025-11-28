@@ -3,9 +3,12 @@ import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 const studyLocations = [
-  { name: "Technical University", coordinates: [13.405, 52.52] as [number, number] }, // Berlin example
-  { name: "State University", coordinates: [-73.935242, 40.730610] as [number, number] }, // NYC example
+  { name: "Colombia", coordinates: [-74.0721, 4.7110] as [number, number] },
+  { name: "Spain", coordinates: [-3.7038, 40.4168] as [number, number] },
+  { name: "France", coordinates: [2.3522, 48.8566] as [number, number] },
 ];
+
+const highlightedCountries = ["COL", "ESP", "FRA"]; // Colombia, Spain, France ISO codes
 
 const WorldMap = () => {
   return (
@@ -18,20 +21,23 @@ const WorldMap = () => {
       >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                fill="hsl(var(--muted))"
-                stroke="hsl(var(--border))"
-                strokeWidth={0.5}
-                style={{
-                  default: { outline: "none" },
-                  hover: { fill: "hsl(var(--accent) / 0.3)", outline: "none" },
-                  pressed: { outline: "none" },
-                }}
-              />
-            ))
+            geographies.map((geo) => {
+              const isHighlighted = highlightedCountries.includes(geo.id);
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  fill={isHighlighted ? "hsl(var(--primary))" : "hsl(0 0% 75%)"}
+                  stroke="hsl(var(--border))"
+                  strokeWidth={0.5}
+                  style={{
+                    default: { outline: "none" },
+                    hover: { fill: isHighlighted ? "hsl(var(--primary) / 0.8)" : "hsl(0 0% 65%)", outline: "none" },
+                    pressed: { outline: "none" },
+                  }}
+                />
+              );
+            })
           }
         </Geographies>
         {studyLocations.map(({ name, coordinates }) => (

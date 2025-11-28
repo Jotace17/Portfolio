@@ -3,9 +3,9 @@ const About = () => {
     <section className="py-24 relative" id="about">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-4 mb-12">
+          <div className="space-y-4 mb-12 text-center">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">About Me</h2>
-            <div className="h-1 w-20 bg-gradient-primary rounded-full" />
+            <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -30,7 +30,7 @@ const About = () => {
             </div>
             
             <div className="flex justify-center">
-              <div className="w-full max-w-md aspect-[3/4] rounded-lg overflow-hidden shadow-lg border-4 border-primary">
+              <div className="w-full max-w-md aspect-[3/4] rounded-lg overflow-hidden shadow-lg bg-muted">
                 <img 
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=800&fit=crop" 
                   alt="About Johnathan Caselles"

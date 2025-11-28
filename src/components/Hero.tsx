@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center animate-fade-in">
             {/* Profile Photo - Left Side */}
             <div className="flex justify-center md:justify-end">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-primary bg-muted overflow-hidden shadow-lg">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-muted overflow-hidden shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop" 
                   alt="Johnathan Caselles"
@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
             
             {/* Content - Right Side */}
-            <div className="space-y-8 text-center md:text-left">
+            <div className="space-y-8 text-center">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground">Hello, I'm</p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
@@ -34,47 +34,47 @@ const Hero = () => {
                 </p>
               </div>
               
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start items-center">
-                <Button size="lg" className="group bg-primary text-primary-foreground hover:bg-primary/90">
+              <div className="flex flex-wrap gap-3 justify-center items-center">
+                <Button size="lg" variant="secondary" className="group">
                   <Download className="mr-2 h-4 w-4" />
                   CV in English
                 </Button>
-                <Button size="lg" className="group bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button size="lg" variant="secondary" className="group">
                   <Download className="mr-2 h-4 w-4" />
                   CV en français
                 </Button>
-                <Button size="lg" variant="outline" className="border-border hover:bg-surface-hover">
+                <Button size="lg" variant="outline">
                   Contact Info
                 </Button>
               </div>
               
-              <div className="flex gap-4 justify-center md:justify-start">
+              <div className="flex gap-4 justify-center">
                 <a 
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors"
+                  className="transition-opacity hover:opacity-70"
                   aria-label="LinkedIn profile"
                 >
-                  <Linkedin className="h-5 w-5 text-foreground" />
+                  <Linkedin className="h-6 w-6 text-foreground" />
                 </a>
                 <a 
                   href="https://github.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors"
+                  className="transition-opacity hover:opacity-70"
                   aria-label="Github profile"
                 >
-                  <Github className="h-5 w-5 text-foreground" />
+                  <Github className="h-6 w-6 text-foreground" />
                 </a>
                 <a 
                   href="https://orcid.org" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-3 rounded-lg bg-surface hover:bg-surface-hover border border-border transition-colors flex items-center justify-center"
+                  className="transition-opacity hover:opacity-70"
                   aria-label="ORCID profile"
                 >
-                  <svg className="h-5 w-5 text-foreground" viewBox="0 0 24 24" fill="currentColor">
+                  <svg className="h-6 w-6 text-foreground" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 8.24c.507 0 .919-.412.919-.919 0-.506-.412-.918-.919-.918-.506 0-.918.412-.918.918 0 .507.412.919.918.919zm-.424 1.548v6.856h1.716v-6.856H6.945zm3.684 0v6.856h1.716v-3.77c0-1.442.85-2.235 2.057-2.235 1.077 0 1.674.673 1.674 1.893v4.112h1.716v-4.473c0-2.052-1.164-3.259-3.061-3.259-1.222 0-2.078.615-2.386 1.317h-.034v-1.441h-1.682z"/>
                   </svg>
                 </a>
