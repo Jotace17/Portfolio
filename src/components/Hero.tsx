@@ -1,29 +1,31 @@
 import { Download, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LogoSlider from "./LogoSlider";
+import photo_hero from "@/assets/foto_hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-16 md:pt-0">
+
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-radial" />
-      
+
       <div className="container mx-auto px-4 relative z-10 flex-1 flex items-center justify-center">
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="grid md:grid-cols-[1fr_1fr] gap-16 items-center animate-fade-in">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid md:grid-cols-2 items-center justify-center animate-fade-in">
             {/* Profile Photo - Left Side */}
-            <div className="flex justify-end md:justify-center">
+            <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-muted overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop" 
+                  src={photo_hero} 
                   alt="Johnathan Caselles"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
-            
+
             {/* Content - Right Side */}
-            <div className="space-y-8 text-center md:text-left flex flex-col justify-center">
+            <div className="space-y-8 text-center pr-16 lg:-ml-32">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground">Hello, I'm</p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
@@ -33,8 +35,8 @@ const Hero = () => {
                   MSc. in Mechatronic and Robotics Engineering
                 </p>
               </div>
-              
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start items-center">
+
+              <div className="flex flex-wrap gap-3 justify-center items-center">
                 <Button size="lg" variant="secondary" className="group">
                   <Download className="mr-2 h-4 w-4" />
                   CV in English
@@ -47,8 +49,8 @@ const Hero = () => {
                   Contact Info
                 </Button>
               </div>
-              
-              <div className="flex gap-4 justify-center md:justify-start">
+
+              <div className="flex gap-4 justify-center">
                 <a 
                   href="https://linkedin.com" 
                   target="_blank" 
@@ -83,10 +85,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Logo Slider */}
       <LogoSlider />
-      
+
       {/* Decorative elements */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
     </section>
