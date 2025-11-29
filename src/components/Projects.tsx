@@ -51,18 +51,7 @@ const Projects = () => {
                 <div className="flex gap-3 pt-2">
                   <Button 
                     size="sm" 
-                    variant="outline" 
-                    className="border-border hover:bg-surface"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    className="bg-primary text-primary-foreground hover:bg-primary/90"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                     asChild
                   >
                     <Link to={`/projects/${project.id}`}>

@@ -1,8 +1,15 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Github, CheckCircle2, Calendar, Users, Building } from "lucide-react";
+import { ArrowLeft, Github, CheckCircle2, Calendar, Users, Building, Lightbulb } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -40,13 +47,34 @@ const ProjectDetail = () => {
               </Button>
             </Link>
 
-            {/* Hero Image */}
-            <div className="aspect-video overflow-hidden rounded-lg mb-8 bg-muted">
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
+            {/* Hero Carousel */}
+            <div className="mb-8 max-w-3xl mx-auto">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="aspect-video overflow-hidden rounded-lg bg-muted">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  {project.mediaUrls && project.mediaUrls.map((url, index) => (
+                    <CarouselItem key={index}>
+                      <div className="aspect-video overflow-hidden rounded-lg bg-muted">
+                        <img 
+                          src={url} 
+                          alt={`${project.title} - Image ${index + 2}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
             </div>
 
             {/* Title Section */}
@@ -132,6 +160,21 @@ const ProjectDetail = () => {
               </div>
             )}
 
+            {/* My Contributions */}
+            {project.contributions && project.contributions.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-2xl font-semibold mb-6">My Contributions</h2>
+                <div className="space-y-3">
+                  {project.contributions.map((contribution, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <Lightbulb className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <p className="text-muted-foreground">{contribution}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Key Results */}
             {project.keyResults && project.keyResults.length > 0 && (
               <div className="mb-12">
@@ -147,23 +190,6 @@ const ProjectDetail = () => {
               </div>
             )}
 
-            {/* Media Gallery */}
-            {project.mediaUrls && project.mediaUrls.length > 0 && (
-              <div className="mb-12">
-                <h2 className="text-2xl font-semibold mb-6">Media</h2>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {project.mediaUrls.map((url, index) => (
-                    <div key={index} className="aspect-video overflow-hidden rounded-lg bg-muted">
-                      <img 
-                        src={url} 
-                        alt={`${project.title} media ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
 
             {/* Action Buttons */}
             <div className="flex gap-4 pt-8 border-t border-border">

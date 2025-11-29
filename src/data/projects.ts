@@ -12,6 +12,7 @@ export interface Project {
   startDate?: string;
   duration?: string;
   associatedWith?: string;
+  contributions?: string[];
   keyResults?: string[];
   mediaUrls?: string[];
 }
@@ -31,6 +32,12 @@ export const projects: Project[] = [
     startDate: "10/2022",
     duration: "9 months",
     associatedWith: "Universidad Autónoma del Caribe (Colombia)",
+    contributions: [
+      "Led the hardware design and sensor integration for the IoT device",
+      "Developed the data acquisition and transmission firmware",
+      "Implemented real-time data visualization through Blynk platform",
+      "Conducted field testing and calibration against fixed monitoring stations"
+    ],
     keyResults: [
       "Proceeding paper published in MDPI journal",
       "6 hours of autonomy thanks to battery and mobile network connection",
