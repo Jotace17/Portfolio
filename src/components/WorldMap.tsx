@@ -1,23 +1,18 @@
-import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
-
-const studyLocations = [
-  { name: "Colombia", coordinates: [-74.0721, 4.7110] as [number, number] },
-  { name: "Spain", coordinates: [-3.7038, 40.4168] as [number, number] },
-  { name: "France", coordinates: [2.3522, 48.8566] as [number, number] },
-];
 
 const highlightedCountries = ["COL", "ESP", "FRA"]; // Colombia, Spain, France ISO codes
 
 const WorldMap = () => {
   return (
-    <div className="w-full h-[500px] bg-surface rounded-lg border border-border overflow-hidden">
+    <div className="w-full h-[500px] md:h-[500px] bg-surface rounded-lg border border-border overflow-auto">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
           scale: 120,
         }}
+        className="w-full h-full min-w-[800px] md:min-w-0"
       >
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
@@ -27,25 +22,20 @@ const WorldMap = () => {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={isHighlighted ? "hsl(var(--primary))" : "hsl(0 0% 75%)"}
+                  fill={isHighlighted ? "hsl(var(--primary))" : "hsl(0 0% 50%)"}
                   stroke="hsl(var(--border))"
                   strokeWidth={0.5}
                   style={{
                     default: { outline: "none" },
-                    hover: { fill: isHighlighted ? "hsl(var(--primary) / 0.8)" : "hsl(0 0% 65%)", outline: "none" },
+                    hover: { fill: isHighlighted ? "hsl(var(--primary) / 0.8)" : "hsl(0 0% 40%)", outline: "none" },
                     pressed: { outline: "none" },
                   }}
+                  className={isHighlighted ? "animate-pulse" : ""}
                 />
               );
             })
           }
         </Geographies>
-        {studyLocations.map(({ name, coordinates }) => (
-          <Marker key={name} coordinates={coordinates}>
-            <circle r={8} fill="hsl(var(--primary))" stroke="hsl(var(--background))" strokeWidth={2} />
-            <circle r={14} fill="hsl(var(--primary) / 0.2)" />
-          </Marker>
-        ))}
       </ComposableMap>
     </div>
   );
