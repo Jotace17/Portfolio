@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
 
             {/* Content - Right Side */}
-            <div className="space-y-8 text-center lg:-ml-32 flex flex-col justify-center">
+            <div className="space-y-8 text-center lg:-ml-32 flex flex-col justify-center pt-8 md:pt-0">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground">Hello, I'm</p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">

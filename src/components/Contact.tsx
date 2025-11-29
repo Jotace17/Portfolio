@@ -17,8 +17,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Let's Connect</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              I'm always interested in discussing new projects, innovative ideas, and opportunities to collaborate. 
-              Whether you have a question or just want to say hello, feel free to reach out.
+              For professional inquiries or collaboration opportunities, you’re welcome to reach out.
             </p>
           </motion.div>
           

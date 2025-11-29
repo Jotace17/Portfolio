@@ -1,20 +1,35 @@
-import sw_logo from "@/assets/logos/solidworks-logo-1.svg";
 const logos = [
-  { name: "SolidWorks", url: sw_logo },
-  { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
-  { name: "Raspberry Pi", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
   { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  { name: "Ubuntu", url: "" },
-  { name: "Fanuc", url: "" },
-  { name: "Staubli", url: "" },
-  { name: "Universal Robots", url: "" },
-  { name: "Cura Ultimaker", url: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ultimaker_Cura_Logo.svg" },
-  { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "Visual Studio", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" },
-  { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Notion", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" },
+  { name: "Ubuntu", url: "https://cdn.worldvectorlogo.com/logos/ubuntu-1.svg" },
   { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "EtherCAT", url: "" },
+  { name: "Fanuc", url: "https://static.spacecrafted.com/fb60cc3d39b74f0786cc14078ce866c7/i/bdd8c488aace43b58e15fe8460df8ae1/1/4SoifmQp45JMgBnHp7ed2/FANUC%20logo.png" },
+  { name: "Notion", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" },
+  { name: "SolidWorks", url: "https://cdn.worldvectorlogo.com/logos/solidworks-logo-1.svg" },
+  { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "Staubli", url: "https://www.eproject4.com/wp-content/uploads/2018/06/staubli-black.png" },
+  { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Universal Robots", url: "https://www.robotics247.com/images/logos/universal-robots-logo-555.png" },
+  { name: "Raspberry Pi", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
+  { name: "Cura Ultimaker", url: "https://itsmeadmade.com/wp-content/uploads/2023/04/Screenshot-2023-04-01-at-1.30.26-PM.png" },
+  { name: "Visual Studio", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" },
+  { name: "EtherCAT", url: "https://guideautomation.com/wp-content/uploads/2014/11/Ethercat-logo.png" },
+  { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+  
+  { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "Ubuntu", url: "https://cdn.worldvectorlogo.com/logos/ubuntu-1.svg" },
+  { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "Fanuc", url: "https://static.spacecrafted.com/fb60cc3d39b74f0786cc14078ce866c7/i/bdd8c488aace43b58e15fe8460df8ae1/1/4SoifmQp45JMgBnHp7ed2/FANUC%20logo.png" },
+  { name: "Notion", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" },
+  { name: "SolidWorks", url: "https://cdn.worldvectorlogo.com/logos/solidworks-logo-1.svg" },
+  { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "Staubli", url: "https://www.eproject4.com/wp-content/uploads/2018/06/staubli-black.png" },
+  { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Universal Robots", url: "https://www.robotics247.com/images/logos/universal-robots-logo-555.png" },
+  { name: "Raspberry Pi", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" },
+  { name: "Cura Ultimaker", url: "https://itsmeadmade.com/wp-content/uploads/2023/04/Screenshot-2023-04-01-at-1.30.26-PM.png" },
+  { name: "Visual Studio", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" },
+  { name: "EtherCAT", url: "https://guideautomation.com/wp-content/uploads/2014/11/Ethercat-logo.png" },
+  { name: "Arduino", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
   
 ];
 
@@ -27,27 +42,14 @@ const LogoSlider = () => {
         {logos.map((logo, index) => (
           <div 
             key={`first-${index}`}
-            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-3000"
+            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-600"
           >
             <img 
               src={logo.url} 
               alt={logo.name}
-              className="h-12 w-12 object-contain"
+              className="h-12 object-contain"
               
               
-            />
-          </div>
-        ))}
-        {/* Duplicate set for seamless loop */}
-        {logos.map((logo, index) => (
-          <div 
-            key={`second-${index}`}
-            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-3000"
-          >
-            <img 
-              src={logo.url} 
-              alt={logo.name}
-              className="h-12 w-12 object-contain"
             />
           </div>
         ))}

@@ -30,24 +30,30 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-6 text-lg text-muted-foreground leading-relaxed"
+              className="space-y-6 text-lg text-muted-foreground leading-relaxed text-justify"
             >
               <p>
-                I'm a passionate engineer dedicated to creating innovative solutions that make a difference. 
-                With a strong foundation in software development and systems engineering, I specialize in 
-                building scalable, efficient, and user-centric applications.
+                I'm a mechatronics engineer with a deep-rooted drive for innovation and over five years of hands-on R&D experience. 
+                My work spans robotics, industrial automation, and embedded systems. 
+                Fueled by curiosity and built on real-world impact.
               </p>
               
               <p>
-                My journey in engineering began with a curiosity for how things work and evolved into a 
-                commitment to excellence in every project I undertake. I believe in continuous learning, 
-                collaboration, and pushing the boundaries of what's possible with technology.
+                Originally from Cúcuta, a city in eastern Colombia. I received a B.Sc. 
+                in Mechatronics Engineering from Universidad Autónoma del Caribe and an M.Sc. also in Mechatronics Engineering, 
+                but this time from University of Oviedo in Spain.
               </p>
               
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-                projects, or sharing knowledge with the developer community. I'm always excited to take on 
-                new challenges and work on projects that have a meaningful impact.
+                Throughout my academic and professional journey, I've had the chance to study and collaborate with 
+                multicultural teams on a wide range of projects. These diverse experiences have not only sharpened my 
+                technical expertise but also expanded my approach to innovation and problem-solving.
+              </p>
+
+              <p>
+                I thrive on challenges and aspire to achieve impactful milestones in my career. 
+                I'm excited to bring my skills and passion to your team and contribute to your company's success. 
+                Let's create something remarkable together!
               </p>
             </motion.div>
             
