@@ -1,21 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Github } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <section className="py-24 relative" id="contact">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="space-y-6 mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6 mb-12"
+          >
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Let's Connect</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               I'm always interested in discussing new projects, innovative ideas, and opportunities to collaborate. 
               Whether you have a question or just want to say hello, feel free to reach out.
             </p>
-          </div>
+          </motion.div>
           
-          <div className="space-y-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="space-y-6"
+          >
             <Button 
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-12"
@@ -48,7 +61,7 @@ const Contact = () => {
                 <Github className="h-8 w-8 text-foreground" />
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       

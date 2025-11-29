@@ -1,5 +1,6 @@
 import { GraduationCap } from "lucide-react";
 import WorldMap from "./WorldMap";
+import { motion } from "framer-motion";
 
 const education = [
   {
@@ -27,10 +28,16 @@ const Education = () => {
     <section className="py-24 relative" id="education">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-4 mb-12 text-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="space-y-4 mb-12 text-center"
+          >
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Academic Path</h2>
             <div className="h-1 w-20 bg-gradient-primary rounded-full mx-auto" />
-          </div>
+          </motion.div>
 
           {/* World Map */}
           <div className="mb-16">
@@ -39,8 +46,12 @@ const Education = () => {
           
           <div className="space-y-8 max-w-4xl mx-auto">
             {education.map((item, index) => (
-              <div 
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative pl-8 pb-8 border-l-2 border-border last:border-l-0 last:pb-0"
               >
                 <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background" />
@@ -58,7 +69,7 @@ const Education = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

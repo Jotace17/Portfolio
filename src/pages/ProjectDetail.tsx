@@ -3,6 +3,7 @@ import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Github, CheckCircle2, Calendar, Users, Building, Lightbulb } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -38,7 +39,12 @@ const ProjectDetail = () => {
       
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-5xl mx-auto"
+          >
             {/* Back Button */}
             <Link to="/#projects">
               <Button variant="ghost" className="mb-8">
@@ -48,7 +54,12 @@ const ProjectDetail = () => {
             </Link>
 
             {/* Hero Carousel */}
-            <div className="mb-8 max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mb-8 max-w-3xl mx-auto"
+            >
               <Carousel className="w-full">
                 <CarouselContent>
                   <CarouselItem>
@@ -75,19 +86,29 @@ const ProjectDetail = () => {
                 <CarouselPrevious className="left-4" />
                 <CarouselNext className="right-4" />
               </Carousel>
-            </div>
+            </motion.div>
 
             {/* Title Section */}
-            <div className="space-y-4 mb-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-4 mb-8"
+            >
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">{project.title}</h1>
               {project.subtitle && (
                 <p className="text-xl text-muted-foreground italic">{project.subtitle}</p>
               )}
               <div className="h-1 w-20 bg-gradient-primary rounded-full" />
-            </div>
+            </motion.div>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-2 mb-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-wrap gap-2 mb-8"
+            >
               {project.tags.map((tag) => (
                 <span 
                   key={tag}
@@ -96,19 +117,29 @@ const ProjectDetail = () => {
                   {tag}
                 </span>
               ))}
-            </div>
+            </motion.div>
 
             {/* Description */}
-            <div className="prose max-w-none mb-12">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="prose max-w-none mb-12"
+            >
               <h2 className="text-2xl font-semibold mb-4">Description</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 {project.fullDescription || project.description}
               </p>
-            </div>
+            </motion.div>
 
             {/* General Information */}
             {(project.role || project.teamSize || project.startDate || project.duration || project.associatedWith) && (
-              <div className="bg-card border border-border rounded-lg p-6 mb-12">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="bg-card border border-border rounded-lg p-6 mb-12"
+              >
                 <h2 className="text-2xl font-semibold mb-6">General Information</h2>
                 <div className="grid md:grid-cols-2 gap-4">
                   {project.role && (
@@ -157,12 +188,17 @@ const ProjectDetail = () => {
                     </div>
                   )}
                 </div>
-              </div>
+              </motion.div>
             )}
 
             {/* My Contributions */}
             {project.contributions && project.contributions.length > 0 && (
-              <div className="mb-12">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="mb-12"
+              >
                 <h2 className="text-2xl font-semibold mb-6">My Contributions</h2>
                 <div className="space-y-3">
                   {project.contributions.map((contribution, index) => (
@@ -172,12 +208,17 @@ const ProjectDetail = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             )}
 
             {/* Key Results */}
             {project.keyResults && project.keyResults.length > 0 && (
-              <div className="mb-12">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="mb-12"
+              >
                 <h2 className="text-2xl font-semibold mb-6">Key Results</h2>
                 <div className="space-y-3">
                   {project.keyResults.map((result, index) => (
@@ -187,12 +228,16 @@ const ProjectDetail = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             )}
 
-
             {/* Action Buttons */}
-            <div className="flex gap-4 pt-8 border-t border-border">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="flex gap-4 pt-8 border-t border-border"
+            >
               <Button 
                 size="lg" 
                 variant="outline"
@@ -203,8 +248,8 @@ const ProjectDetail = () => {
                   View Code
                 </a>
               </Button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
