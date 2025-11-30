@@ -3,28 +3,40 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Languages",
-    skills: ["Python", "JavaScript/TypeScript", "Java", "C++", "Go", "SQL"]
+    title: "Programming",
+    skills: ["C++", "Python", "Arduino", "Matlab", "OOP", "ROS2", "Ladder", "Assembly"]
   },
   {
-    title: "Frontend",
-    skills: ["React", "Next.js", "Vue.js", "Tailwind CSS", "HTML/CSS", "Redux"]
+    title: "Software and Tools",
+    skills: ["OpenCV", "Jupiter", "Visual Studio", "MPlab", "FLuidSim", "Studio5000"]
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express", "Django", "FastAPI", "REST APIs", "GraphQL"]
+    title: "Industrial Robots",
+    skills: ["FANUC", "Universal Robots", "Staubli", "Epson"]
   },
   {
-    title: "Database",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Firebase", "Supabase"]
+    title: "Mechanical Design",
+    skills: ["SolidWorks", "Cura", "EdgeCam", "Abaqus"]
   },
   {
-    title: "DevOps & Tools",
-    skills: ["Docker", "Kubernetes", "AWS", "Git", "CI/CD", "Linux"]
+    title: "Collaboration tools",
+    skills: ["Git", "Notion", "Overleaf", "Trello"]
   },
   {
-    title: "Other",
-    skills: ["Machine Learning", "System Design", "Agile", "TDD", "Microservices", "API Design"]
+    title: "Electronic Design",
+    skills: ["Proteus", "EasyEDA", "Altium"]
+  },
+  {
+    title: "COM Protocols",
+    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "MQTT", "UART", "EtherCAT"]
+  },
+  {
+    title: "Development",
+    skills: ["Rapid prototyping", "Microcontrollers", "Data adquisition", "Embedded systems", "Sensor/actuator integration", "PCB design", "Computer vision", "3D printing"]
+  },
+  {
+    title: "Soft Skills",
+    skills: ["Problem-solving", "Critical thinking", "Adaptability", "Proactivity"]
   }
 ];
 
