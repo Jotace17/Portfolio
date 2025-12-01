@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Globe } from "lucide-react";
 
 const languages = [
-  { name: "French", level: "Native", proficiency: 100 },
+  { name: "Spanish", level: "Native", proficiency: 100 },
   { name: "English", level: "Fluent (C1)", proficiency: 90 },
-  { name: "Spanish", level: "Intermediate (B1)", proficiency: 60 },
-  { name: "German", level: "Basic (A2)", proficiency: 30 },
+  { name: "French", level: "Proficient (B2)", proficiency: 75 },
+  { name: "Portuguese", level: "Basic (A2)", proficiency: 30 },
 ];
 
 const Languages = () => {
