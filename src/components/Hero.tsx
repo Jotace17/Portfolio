@@ -3,6 +3,14 @@ import { Button } from "@/components/ui/button";
 import LogoSlider from "./LogoSlider";
 import photo_hero from "@/assets/foto_hero.jpg";
 
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-16 md:pt-0">
@@ -60,7 +68,7 @@ const Hero = () => {
                   <Download className="mr-2 h-4 w-4" />
                   CV en français
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline"  onClick={() => scrollToSection("#contact")}>
                   Contact Info
                 </Button>
               </div>

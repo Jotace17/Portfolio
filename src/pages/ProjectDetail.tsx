@@ -12,11 +12,16 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import { useEffect } from "react";
 import { HashLink } from 'react-router-hash-link'
 
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === id);
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+  }, []);
 
   if (!project) {
     return (
