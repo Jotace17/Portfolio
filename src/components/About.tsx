@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import about_photo from "@/assets/photo_about.jpg";
 
 const About = () => {
   return (
@@ -66,7 +67,7 @@ const About = () => {
             >
               <div className="w-full max-w-md aspect-[3/4] rounded-lg overflow-hidden shadow-lg bg-muted">
                 <img 
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=800&fit=crop" 
+                  src={about_photo} 
                   alt="About Johnathan Caselles"
                   className="w-full h-full object-cover"
                 />

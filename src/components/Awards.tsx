@@ -3,28 +3,46 @@ import { motion } from "framer-motion";
 
 const awards = [
   {
-    title: "Best Engineering Project Award",
-    organization: "Technical University",
-    period: "2022",
-    description: "Recognized for outstanding innovation in autonomous robotics systems."
+    title: "Published Research Paper",
+    organization: "MDPI Journal",
+    period: "January 2025",
+    description: "Published a paper on the development of an innovative device for indoor and outdoor air quality measurement, enabling detection and monitoring of hazardous air pollutants impacting health."
   },
   {
-    title: "Research Excellence Grant",
-    organization: "National Science Foundation",
-    period: "2021",
-    description: "Awarded funding for advanced mechatronics research in industrial automation."
+    title: "Speaker",
+    organization: "III Congress of Technology and Innovation in Engineering and Computing, Lima, Peru",
+    period: "November 2023",
+    description: "Presented a technical talk on the Q-Air device, an innovative system for indoor and outdoor air quality monitoring."
+  },
+  {
+    title: "Outstanding Final Degree Project Award",
+    organization: "Universidad Autónoma del Caribe",
+    period: "July 2023",
+    description: "Recognized for excellence in final year project: development of the Q-Air* device for comprehensive indoor and outdoor air quality monitoring focusing on health-related pollutants."
   },
   {
     title: "Outstanding Graduate Student",
-    organization: "Engineering Department",
-    period: "2020",
-    description: "Honored for academic excellence and contributions to robotics research."
+    organization: "Universidad Autónoma del Caribe",
+    period: "July 2023",
+    description: "Honored for exceptional academic achievement and consistent excellence throughout the degree program."
   },
   {
-    title: "Innovation Challenge Winner",
-    organization: "International Robotics Competition",
-    period: "2019",
-    description: "First place in autonomous navigation and control systems category."
+    title: "Full Scholarship Recipient",
+    organization: "European Union",
+    period: "May 2023",
+    description: "Awarded a full scholarship for the Joint Master Degree in Robotics and Mechatronics Engineering (EU4M)."
+  },
+  {
+    title: "Software and Prototype Registrations",
+    organization: "Universidad Autónoma del Caribe - Ministry of Science, Technology, and Innovation, Colombia",
+    period: "2020-2023",
+    description: "Secured intellectual property rights for 6 innovative software solutions and prototypes, officially registered with Colombia's Ministry of Science, Technology, and Innovation."
+  },
+  {
+    title: "Honor Roll",
+    organization: "Universidad Autónoma del Caribe",
+    period: "2019-2023",
+    description: "Consistently ranked in the top 5 for academic performance each semester throughout the entire degree."
   }
 ];
 

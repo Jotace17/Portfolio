@@ -4,23 +4,26 @@ import { motion } from "framer-motion";
 
 const education = [
   {
-    degree: "Master of Science in Computer Engineering",
-    institution: "Technical University",
-    period: "2020 - 2022",
-    description: "Specialized in Software Architecture and Distributed Systems. GPA: 3.9/4.0"
+    degree: "EU4M Master in Robotics and Mechatronics Engineering (2nd year)",
+    institution: "Supmicrotech ENSMM",
+    city: "Besançon, France",
+    period: "2024 - 2025",
+    description: "Specialized in Software Architecture and Distributed Systems. GPA: 16/20"
   },
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "State University",
+    degree: "EU4M Master in Robotics and Mechatronics Engineering (1st year)",
+    institution: "Universidad de Oviedo",
+    period: "2023 - 2024",
+    city: "Gijón, Spain",
+    description: "Specialized in Software Architecture and Distributed Systems. GPA: 7.6/10.0"
+  },
+  {
+    degree: "Bachelor of Science in Mechatronics Engineering",
+    institution: "Universidad Autónoma del Caribe",
     period: "2016 - 2020",
-    description: "Focus on Algorithms, Data Structures, and Software Development. Dean's List all semesters."
+    city: "Barranquilla, Colombia",
+    description: "Focus on Algorithms, Data Structures, and Software Development. Dean's List all semesters. GPA: 4.5/5.0"
   },
-  {
-    degree: "Relevant Certifications",
-    institution: "Various Platforms",
-    period: "2019 - Present",
-    description: "AWS Solutions Architect, Google Cloud Professional, Kubernetes Administrator (CKA)"
-  }
 ];
 
 const Education = () => {
@@ -64,6 +67,7 @@ const Education = () => {
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-foreground">{item.degree}</h3>
                       <p className="text-primary font-medium">{item.institution}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{item.city}</p>
                       <p className="text-sm text-muted-foreground mt-1">{item.period}</p>
                       <p className="text-muted-foreground mt-3">{item.description}</p>
                     </div>

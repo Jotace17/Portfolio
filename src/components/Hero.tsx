@@ -37,11 +37,26 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-wrap gap-3 justify-center items-center">
-                <Button size="lg" variant="secondary" className="group">
+                <Button 
+                  size="lg" 
+                  variant="secondary" 
+                  className="group" 
+                  onClick={() =>
+                  (window.location.href = "https://drive.google.com/file/d/1h81pI8GACOJKDLFrxuMLxhlMBR_xQLt0/view?usp=drive_link")
+                  }
+                >
                   <Download className="mr-2 h-4 w-4" />
                   CV in English
                 </Button>
-                <Button size="lg" variant="secondary" className="group">
+
+                <Button 
+                  size="lg" 
+                  variant="secondary" 
+                  className="group"
+                  onClick={() =>
+                  (window.location.href = "https://drive.google.com/file/d/12xCQabItwQzRK4zVXYXUMIaubJv8ngoX/view?usp=drive_link")
+                  }
+                >
                   <Download className="mr-2 h-4 w-4" />
                   CV en français
                 </Button>
@@ -52,7 +67,7 @@ const Hero = () => {
 
               <div className="flex gap-4 justify-center">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/jcaselles/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="transition-opacity hover:opacity-70"
@@ -61,7 +76,7 @@ const Hero = () => {
                   <Linkedin className="h-6 w-6 text-foreground" />
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/Jotace17" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="transition-opacity hover:opacity-70"
@@ -70,7 +85,7 @@ const Hero = () => {
                   <Github className="h-6 w-6 text-foreground" />
                 </a>
                 <a 
-                  href="https://orcid.org" 
+                  href="https://orcid.org/0009-0008-2112-1748" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="transition-opacity hover:opacity-70"

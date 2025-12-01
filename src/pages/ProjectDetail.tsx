@@ -12,6 +12,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import { HashLink } from 'react-router-hash-link'
+
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === id);
@@ -46,12 +48,12 @@ const ProjectDetail = () => {
             className="max-w-5xl mx-auto"
           >
             {/* Back Button */}
-            <Link to="/#projects">
+            <HashLink smooth to="/#projects">
               <Button variant="ghost" className="mb-8">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Projects
               </Button>
-            </Link>
+            </HashLink>
 
             {/* Hero Carousel */}
             <motion.div
@@ -238,16 +240,13 @@ const ProjectDetail = () => {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="flex gap-4 pt-8 border-t border-border"
             >
-              <Button 
-                size="lg" 
-                variant="outline"
-                asChild
-              >
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5 mr-2" />
-                  View Code
-                </a>
+              
+            <HashLink smooth to="/#projects">
+              <Button variant="ghost" className="mb-8">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Projects
               </Button>
+            </HashLink>
             </motion.div>
           </motion.div>
         </div>
