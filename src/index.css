@@ -65,5 +65,5 @@ All colors MUST be HSL.
   }
 }
 .animate-scroll {
-  animation: scroll 100s linear infinite;
+  animation: scroll 50s linear infinite;
 }

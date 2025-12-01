@@ -38,22 +38,22 @@ const LogoSlider = () => {
   return (
     <div className="w-full overflow-hidden py-8 relative">
       {/* Left gradient overlay */}
-      <div className="absolute left-0 top-0 bottom-0 w-32 md:w-48 lg:w-64 bg-gradient-to-r from-background via-background/80 to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-32 md:w-48 lg:w-64 bg-gradient-to-r from-background via-background/100 to-transparent z-10 pointer-events-none" />
       
       {/* Right gradient overlay */}
-      <div className="absolute right-0 top-0 bottom-0 w-32 md:w-48 lg:w-64 bg-gradient-to-l from-background via-background/80 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 md:w-48 lg:w-64 bg-gradient-to-l from-background via-background/100 to-transparent z-10 pointer-events-none" />
       
       <div className="flex animate-scroll">
         {/* First set of logos */}
         {logos.map((logo, index) => (
           <div 
             key={`first-${index}`}
-            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-600"
+            className="flex-shrink-0 mx-8 grayscale hover:grayscale-0 transition-all duration-400"
           >
             <img 
               src={logo.url} 
               alt={logo.name}
-              className="h-12 object-contain"
+              className="h-10 object-contain"
             />
           </div>
         ))}
