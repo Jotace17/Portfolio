@@ -6,6 +6,8 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Awards from "@/components/Awards";
+import Languages from "@/components/Languages";
+import Interests from "@/components/Interests";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -19,6 +21,8 @@ const Index = () => {
       <Education />
       <Projects />
       <Awards />
+      <Languages />
+      <Interests />
       <Contact />
       
       <footer className="py-8 border-t border-border">
