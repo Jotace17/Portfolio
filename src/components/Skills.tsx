@@ -19,12 +19,12 @@ const skillCategories = [
     skills: ["SolidWorks", "Cura", "EdgeCam", "Abaqus"]
   },
   {
-    title: "Collaboration tools",
-    skills: ["Git", "Notion", "Overleaf", "Trello"]
-  },
-  {
     title: "Electronic Design",
     skills: ["Proteus", "EasyEDA", "Altium"]
+  },
+  {
+    title: "Collaboration tools",
+    skills: ["Git", "Notion", "Overleaf", "Office", "Trello"]
   },
   {
     title: "COM Protocols",

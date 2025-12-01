@@ -8,21 +8,21 @@ const education = [
     institution: "Supmicrotech ENSMM",
     city: "Besançon, France",
     period: "2024 - 2025",
-    description: "Specialized in Software Architecture and Distributed Systems. GPA: 16/20"
+    description: "Specialized in advanced robotics & soft-robotics, computer vision, and distributed mechatronic systems."
   },
   {
     degree: "EU4M Master in Robotics and Mechatronics Engineering (1st year)",
     institution: "Universidad de Oviedo",
     period: "2023 - 2024",
     city: "Gijón, Spain",
-    description: "Specialized in Software Architecture and Distributed Systems. GPA: 7.6/10.0"
+    description: "Focused on robotics, automation, mechatronic & mechanical design, and embedded systems."
   },
   {
     degree: "Bachelor of Science in Mechatronics Engineering",
     institution: "Universidad Autónoma del Caribe",
     period: "2016 - 2020",
     city: "Barranquilla, Colombia",
-    description: "Focus on Algorithms, Data Structures, and Software Development. Dean's List all semesters. GPA: 4.5/5.0"
+    description: "Focused on robotics, protoyping, automation, and mechatronic design and development."
   },
 ];
 
