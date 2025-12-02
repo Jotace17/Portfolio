@@ -8,8 +8,8 @@ const experiences = [
     company: "Wandercraft",
     location: "Paris, France",
     period: "Feb 2023 - Aug 2023",
-    description: "Led development of industrial automation solutions using collaborative robots. Implemented vision systems and PLC programming for manufacturing processes.",
-    technologies: ["C++", "Robotics", "Testbench", "EtherCAT", "Medical device", "exoskeleton"],
+    description: "Developed a modular C++ test bench with EtherCAT to validate medical exoskeleton software, achieving sub-10-minute cycles and instant pass/fail reporting. This included 4,000+ automated checks across core scenarios, supported by a custom web dashboard for real-time monitoring and scalable deployment.",
+    technologies: ["C++", "Robotics", "Testbench", "EtherCAT", "Automation", "Medical device", "exoskeleton"],
   },
   {
     id: 2,
@@ -17,17 +17,17 @@ const experiences = [
     company: "Relianz Mining Solutions",
     location: "Barranquilla, Colombia",
     period: "Dec 2022 - Apr 2023",
-    description: "Developed embedded systems for robotic applications. Collaborated with cross-functional teams to design and prototype mechanical components.",
-    technologies: ["Industrial robots", "FANUC", "SolidWorks", "PLC", "Automation", "Restoration"],
+    description: "Programmed FANUC robots to optimize metal spray coating, reducing times by 35% while ensuring quality compliance. Designed SolidWorks mounting devices and protections that cut prep time by 43% and rework rates from 60% to 5% through standardized procedures and documentation.",
+    technologies: ["Industrial robots", "FANUC", "SolidWorks", "PLC", "Automation", "Industrial Automation", "Mechanical design"],
   },
   {
     id: 3,
-    title: "Research Assistant",
+    title: "Junior Researcher",
     company: "GIIM Group - Universidad Autónoma del Caribe",
     location: "Barranquilla, Colombia",
     period: "Feb 2020 - Jun 2023",
-    description: "Conducted research on autonomous navigation systems. Published findings in peer-reviewed journals and presented at international conferences.",
-    technologies: ["Robotics", "SolidWorks" , "Python", "C++", "Simulation", "Mechatronic design", "Prototyping", "MATLAB"],
+    description: "Led prototyping of robotic, biomedical, and IoT systems using Arduino, ESP32, Raspberry Pi, and SolidWorks for real-world applications. Integrated sensors/actuators with I2C, SPI, UART, MQTT protocols and calibration; developed CNN/RNN models in OpenCV/TensorFlow for detection and estimation, securing IP for 6 projects endorsed by Minciencias.",
+    technologies: ["Robotics", "SolidWorks" , "Python", "C++", "microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
   },
 ];
 

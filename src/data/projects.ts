@@ -1,3 +1,27 @@
+import stylet_cover from "@/assets/projects/stylet/cover.png";
+import stylet_photo1 from "@/assets/projects/stylet/setup.png";
+import stylet_video1 from "@/assets/projects/stylet/test.mp4";
+import stylet_video2 from "@/assets/projects/stylet/tracking.mp4";
+import stylet_video3 from "@/assets/projects/stylet/aruco.mp4";
+
+import qair_cover from "@/assets/projects/qair/cover.png";
+import qair_video1 from "@/assets/projects/qair/test.mp4";
+import qair_photo1 from "@/assets/projects/qair/pcb.png";
+import qair_photo2 from "@/assets/projects/qair/pcb_2d.png";
+
+
+import robot_cover from "@/assets/projects/Robot3t/cover.png";
+import robot_video1 from "@/assets/projects/Robot3t/test.mp4";
+
+import rocco_cover from "@/assets/projects/rocco/cover.png";
+
+import fillbo_cover from "@/assets/projects/fillbo/cover.png";
+import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
+
+import grablas_cover from "@/assets/projects/grablas/cover.png";
+import grablas_photo1 from "@/assets/projects/grablas/perspective.png";
+
+
 export interface MediaItem {
   url: string;
   type: "image" | "video";
@@ -29,7 +53,7 @@ export const projects: Project[] = [
     description: "Motion-capture pen tracked with depth sensing to control a 6DOF industrial robot through high-precision gestures and scaled movements.",
     fullDescription: "This project focused on the development of a motion capture and gesture recognition system based on an Intel RealSense depth camera, designed to track a custom ergonomic pen with high spatial accuracy. The system transforms the pen’s trajectory, orientation, and gesture inputs into precise robotic commands for the real-time control of a 6DOF industrial robot. It also supports scaled manipulation in multiple workspaces, which significantly enhances fine motor control during intricate tasks. These capabilities could enable applications in micro-assembly, precision manufacturing, and other environments that require accurate and adaptable human–robot interaction.",
     tags: ["Motion Capture", "Gesture Recognition", "Robotics", "Intel RealSense"],
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+    image: stylet_cover,
     role: "Software leader",
     teamSize: "4 people",
     startDate: "10/2024",
@@ -49,7 +73,12 @@ export const projects: Project[] = [
       "Reliable real-time control and communication with the Universal Robot platform",
       "Implementation of multiple operational modes including scale mode, real-time mode, and path imitation mode"
     ],
-    media: []
+    media: [
+      { url: stylet_photo1, type: "image" },
+      { url: stylet_video1, type: "video" },
+      { url: stylet_video2, type: "video" },
+      { url: stylet_video3, type: "video" },
+    ]
   },
   {
     id: "q-air",
@@ -58,7 +87,7 @@ export const projects: Project[] = [
     description: "Portable IoT device for multi-pollutant air quality monitoring with real-time cloud visualization and geolocated environmental data acquisition.",
     fullDescription: "This project focused on the design, assembly, and programming of a portable 6x6x8cm IoT device for monitoring of 6 types of air pollutants (CO, CO₂, NO₂, O₃, PM₂.₅, PM₁₀) and atmospheric variables such as temperature and humidity, with live location and cloud storage and visualization through blynk. Designed for the measurement of air quality in outdoor and indoor environments.",
     tags: ["IoT", "Air Quality", "Sensors", "Blynk"],
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+    image: qair_cover,
     role: "Project co-leader",
     teamSize: "2 people",
     startDate: "10/2022",
@@ -77,7 +106,11 @@ export const projects: Project[] = [
       "Real time cloud storage through MQTT",
       "One software registration was obtained"
     ],
-    media: []
+    media: [
+      { url: qair_photo1, type: "image" },
+      { url: qair_photo2, type: "image" },
+      { url: qair_video1, type: "video" },
+    ]
   },
   {
     id: "rocco",
@@ -86,7 +119,7 @@ export const projects: Project[] = [
     description: "Telemanipulated dual 6DOF robotic arms designed to replicate human motion for safe handling of biological agents in controlled environments.",
     fullDescription: "This project focused on the design, construction, and programming of a pair of tele-manipulable robotic arms that replicate human arm movements for handling biological agents. These robotic arms are equipped with the flexibility and precision necessary to mimic human dexterity while ensuring safety and efficiency in environments requiring precision handling.",
     tags: ["Robotics", "Telemanipulation", "Biomedical Engineering", "6DOF", "Embedded Systems"],
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+    image: rocco_cover,
     role: "Project leader in charge of software",
     teamSize: "4 people",
     startDate: "08/2022",
@@ -116,7 +149,7 @@ export const projects: Project[] = [
     description: "Anthropomorphic 3DOF robot with computer vision for autonomous and real-time Tic Tac Toe gameplay against users.",
     fullDescription: "This project involved the complete design, fabrication, assembly, and evaluation of an anthropomorphic robot endowed with three degrees of freedom, conceived to autonomously play Tic Tac Toe against a human opponent. The work encompassed detailed CAD modelling, component selection for mechanical and electronic subsystems, the development of a custom PCB, and the implementation of computer vision algorithms that enabled the robot to perceive the game board and execute strategic movements.",
     tags: ["Robotics", "Computer Vision", "3DOF", "Embedded Systems", "Human–Robot Interaction"],
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+    image: robot_cover,
     role: "Design and software leader",
     teamSize: "6 people",
     startDate: "01/2024",
@@ -136,7 +169,9 @@ export const projects: Project[] = [
       "Custom PCBs designed and integrated",
       "Successful communication between multiple microcontrollers"
     ],
-    media: []
+    media: [
+      { url: robot_video1, type: "video" },
+    ]
   },
   {
     id: "fillbo",
@@ -145,7 +180,7 @@ export const projects: Project[] = [
     description: "Automated flexible manufacturing system for detecting, filling, sealing, verifying, and classifying plastic bottles.",
     fullDescription: "This project focused on the design, assembly, and programming of a fully automated flexible manufacturing system for the filling of plastic bottles. The system comprised six stations organized into five sequential phases, which included detection, filling, sealing, verification, and classification. The design aimed to achieve autonomous operation with an output capacity of two bottles per minute, integrating mechanical, electrical, and software subsystems into a coherent production line. The work involved component selection, actuator design, sensor integration, and the development of control software that coordinated all stages of the process with precision and repeatability.",
     tags: ["Automation", "FMS", "Industrial Control", "Embedded Systems", "Mechatronics"],
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+    image: fillbo_cover,
     role: "Team leader, in charge of design and software",
     teamSize: "4 people",
     startDate: "03/2022",
@@ -165,7 +200,9 @@ export const projects: Project[] = [
       "Electrical design and sensor integration achieved",
       "One software registration was obtained"
     ],
-    media: []
+    media: [
+      { url: fillbo_video1, type: "video" },
+    ]
   },
 
   {
@@ -175,9 +212,9 @@ export const projects: Project[] = [
     description: "Low-cost laser engraving machine designed for precise engraving, printing, and cutting through soft materials.",
     fullDescription: "This project involved the design and construction of a low-cost laser engraving machine intended to improve engraving, printing, and cutting processes across a range of materials. The system exploited the precision and adaptability of laser technology to achieve finer detail and greater versatility when compared to conventional mechanical engraving methods.",
     tags: ["Laser Systems", "Mechatronics", "Automation", "Fabrication", "Embedded Systems"],
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+    image: grablas_cover,
     role: "Design leader",
-    teamSize: "4 people",
+    teamSize: "3 people",
     startDate: "04/2022",
     duration: "3 months",
     associatedWith: "Universidad Autónoma del Caribe (Colombia)",
@@ -195,6 +232,8 @@ export const projects: Project[] = [
       "User manual and documentation completed",
       "One software registration was obtained"
     ],
-    media: []
+    media: [
+      { url: grablas_photo1, type: "image" },
+    ]
   },
 ];
