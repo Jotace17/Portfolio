@@ -1,3 +1,8 @@
+export interface MediaItem {
+  url: string;
+  type: "image" | "video";
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -13,7 +18,7 @@ export interface Project {
   associatedWith?: string;
   contributions?: string[];
   keyResults?: string[];
-  mediaUrls?: string[];
+  media?: MediaItem[];
 }
 
 export const projects: Project[] = [
@@ -44,7 +49,7 @@ export const projects: Project[] = [
       "Reliable real-time control and communication with the Universal Robot platform",
       "Implementation of multiple operational modes including scale mode, real-time mode, and path imitation mode"
     ],
-    mediaUrls: []
+    media: []
   },
   {
     id: "q-air",
@@ -72,7 +77,7 @@ export const projects: Project[] = [
       "Real time cloud storage through MQTT",
       "One software registration was obtained"
     ],
-    mediaUrls: []
+    media: []
   },
   {
     id: "rocco",
@@ -101,7 +106,7 @@ export const projects: Project[] = [
       "Custom PCBs designed and integrated into the robotic system",
       "Two software registrations were obtained"
     ],
-    mediaUrls: []
+    media: []
   },
 
   {
@@ -131,7 +136,7 @@ export const projects: Project[] = [
       "Custom PCBs designed and integrated",
       "Successful communication between multiple microcontrollers"
     ],
-    mediaUrls: []
+    media: []
   },
   {
     id: "fillbo",
@@ -160,7 +165,7 @@ export const projects: Project[] = [
       "Electrical design and sensor integration achieved",
       "One software registration was obtained"
     ],
-    mediaUrls: []
+    media: []
   },
 
   {
@@ -190,6 +195,6 @@ export const projects: Project[] = [
       "User manual and documentation completed",
       "One software registration was obtained"
     ],
-    mediaUrls: []
+    media: []
   },
 ];
