@@ -78,14 +78,25 @@ const ProjectDetail = () => {
                       />
                     </div>
                   </CarouselItem>
-                  {project.mediaUrls && project.mediaUrls.map((url, index) => (
+                  {project.media && project.media.map((item, index) => (
                     <CarouselItem key={index}>
                       <div className="aspect-video overflow-hidden rounded-lg bg-muted">
-                        <img 
-                          src={url} 
-                          alt={`${project.title} - Image ${index + 2}`}
-                          className="w-full h-full object-cover"
-                        />
+                        {item.type === "video" ? (
+                          <video
+                            src={item.url}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <img 
+                            src={item.url} 
+                            alt={`${project.title} - Image ${index + 2}`}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
                       </div>
                     </CarouselItem>
                   ))}
