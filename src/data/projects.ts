@@ -1,11 +1,11 @@
 import stylet_cover from "@/assets/projects/stylet/cover.png";
 import stylet_photo1 from "@/assets/projects/stylet/setup.png";
-//import stylet_video1 from "@/assets/projects/stylet/test.mp4";
+import stylet_video1 from "@/assets/projects/stylet/test.mp4";
 import stylet_video2 from "@/assets/projects/stylet/tracking.mp4";
 import stylet_video3 from "@/assets/projects/stylet/aruco.mp4";
 
 import qair_cover from "@/assets/projects/qair/cover.png";
-//import qair_video1 from "@/assets/projects/qair/test.mp4";
+import qair_video1 from "@/assets/projects/qair/test.mp4";
 import qair_photo1 from "@/assets/projects/qair/pcb.png";
 import qair_photo2 from "@/assets/projects/qair/pcb_2d.png";
 
@@ -16,7 +16,7 @@ import robot_video1 from "@/assets/projects/Robot3t/test.mp4";
 import rocco_cover from "@/assets/projects/rocco/cover.png";
 
 import fillbo_cover from "@/assets/projects/fillbo/cover.png";
-// import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
+import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
 
 import grablas_cover from "@/assets/projects/grablas/cover.png";
 import grablas_photo1 from "@/assets/projects/grablas/perspective.png";
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     ],
     media: [
       { url: stylet_photo1, type: "image" },
-      //{ url: stylet_video1, type: "video" },
+      { url: stylet_video1, type: "video" },
       { url: stylet_video2, type: "video" },
       { url: stylet_video3, type: "video" },
     ]
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     media: [
       { url: qair_photo1, type: "image" },
       { url: qair_photo2, type: "image" },
-      //{ url: qair_video1, type: "video" },
+      { url: qair_video1, type: "video" },
     ]
   },
   {
@@ -201,7 +201,7 @@ export const projects: Project[] = [
       "One software registration was obtained"
     ],
     media: [
-      //{ url: fillbo_video1, type: "video" },
+      { url: fillbo_video1, type: "video" },
     ]
   },
 
