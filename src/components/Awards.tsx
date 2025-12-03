@@ -6,7 +6,19 @@ const awards = [
     title: "Published Research Paper",
     organization: "MDPI Journal",
     period: "January 2025",
-    description: "Published a paper on the development of an innovative device for indoor and outdoor air quality measurement, enabling detection and monitoring of hazardous air pollutants impacting health."
+    description: (
+      <>
+        Published a <a 
+          href="https://www.mdpi.com/2673-4591/83/1/13" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="underline hover:underline-offset-2"
+        >
+          paper
+        </a>{" "}
+        on the development of an innovative device for indoor and outdoor air quality measurement, enabling detection and monitoring of hazardous air pollutants impacting health.
+      </>
+    )
   },
   {
     title: "Speaker",
