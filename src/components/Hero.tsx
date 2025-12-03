@@ -40,7 +40,7 @@ const Hero = () => {
                   Johnathan Caselles
                 </h1>
                 <p className="text-xl md:text-2xl bg-gradient-primary bg-clip-text text-transparent font-semibold">
-                  MSc. in Mechatronic and Robotics Engineering
+                  MSc. in Mechatronics and Robotics Engineering
                 </p>
               </div>
 
