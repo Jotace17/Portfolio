@@ -27,7 +27,7 @@ const experiences = [
     location: "Barranquilla, Colombia",
     period: "Feb 2020 - Jun 2023",
     description: "Led prototyping of robotic, biomedical, and IoT systems using Arduino, ESP32, Raspberry Pi, and SolidWorks for real-world applications. Integrated sensors/actuators with I2C, SPI, UART, MQTT protocols and calibration; developed CNN/RNN models in OpenCV/TensorFlow for detection and estimation, securing IP for 6 projects endorsed by Minciencias.",
-    technologies: ["Robotics", "SolidWorks" , "Python", "C++", "microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
+    technologies: ["Robotics", "SolidWorks" , "Python", "C++", "Microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
   },
 ];
 

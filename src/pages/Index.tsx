@@ -22,7 +22,6 @@ const Index = () => {
       <Projects />
       <Awards />
       <Languages />
-      <Interests />
       <Contact />
       
       <footer className="py-8 border-t border-border">
