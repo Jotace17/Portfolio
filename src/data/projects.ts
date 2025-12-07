@@ -1,5 +1,7 @@
 import stylet_cover from "@/assets/projects/stylet/cover.png";
 import stylet_photo1 from "@/assets/projects/stylet/setup.png";
+import stylet_photo2 from "@/assets/projects/stylet/sketch_structure.png";
+import stylet_photo3 from "@/assets/projects/stylet/sketch_elements.png";
 import stylet_video1 from "@/assets/projects/stylet/test.mp4";
 import stylet_video2 from "@/assets/projects/stylet/tracking.mp4";
 import stylet_video3 from "@/assets/projects/stylet/aruco.mp4";
@@ -12,6 +14,10 @@ import qair_photo2 from "@/assets/projects/qair/pcb_2d.png";
 
 import robot_cover from "@/assets/projects/Robot3t/cover.png";
 import robot_video1 from "@/assets/projects/Robot3t/test.mp4";
+import robot_photo1 from "@/assets/projects/Robot3t/side_view.png";
+import robot_photo2 from "@/assets/projects/Robot3t/sagital_view.png";
+import robot_photo3 from "@/assets/projects/Robot3t/explosion_transmision.png";
+import robot_photo4 from "@/assets/projects/Robot3t/explosion_gripper.png";
 
 import rocco_cover from "@/assets/projects/rocco/cover.png";
 
@@ -74,6 +80,8 @@ export const projects: Project[] = [
       "Implementation of multiple operational modes including scale mode, real-time mode, and path imitation mode"
     ],
     media: [
+      { url: stylet_photo2, type: "image" },
+      { url: stylet_photo3, type: "image" },
       { url: stylet_photo1, type: "image" },
       { url: stylet_video1, type: "video" },
       { url: stylet_video2, type: "video" },
@@ -81,35 +89,38 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "q-air",
-    title: "Q-Air",
-    subtitle: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
-    description: "Portable IoT device for multi-pollutant air quality monitoring with real-time cloud visualization and geolocated environmental data acquisition.",
-    fullDescription: "This project focused on the design, assembly, and programming of a portable 6x6x8cm IoT device for monitoring of 6 types of air pollutants (CO, CO₂, NO₂, O₃, PM₂.₅, PM₁₀) and atmospheric variables such as temperature and humidity, with live location and cloud storage and visualization through blynk. Designed for the measurement of air quality in outdoor and indoor environments.",
-    tags: ["IoT", "Air Quality", "Sensors", "MQTT", "Blynk"],
-    image: qair_cover,
-    role: "Project co-leader",
-    teamSize: "2 people",
-    startDate: "10/2022",
-    duration: "9 months",
-    associatedWith: "Universidad Autónoma del Caribe (Colombia)",
+    id: "robot3t",
+    title: "Robot3T",
+    subtitle: "3-DOF anthropomorphic robot with computer vision capable of autonomously playing tic-tac-toe",
+    description: "Anthropomorphic 3DOF robot with computer vision for autonomous and real-time Tic Tac Toe gameplay against human users.",
+    fullDescription: "This project involved the complete design, fabrication, assembly, and evaluation of an anthropomorphic robot endowed with three degrees of freedom, conceived to autonomously play Tic Tac Toe against a human opponent. The work encompassed detailed CAD modelling, component selection for mechanical and electronic subsystems, the development of a custom PCB, and the implementation of computer vision algorithms that enabled the robot to perceive the game board and execute strategic movements.",
+    tags: ["Robotics", "Computer Vision", "3DOF", "Embedded Systems", "Human–Robot Interaction"],
+    image: robot_cover,
+    role: "Design and software leader",
+    teamSize: "6 people",
+    startDate: "01/2024",
+    duration: "5 months",
+    associatedWith: "Universidad de Oviedo (Spain)",
     contributions: [
-      "Led the hardware design and sensor integration for the IoT device",
-      "Developed the data acquisition and transmission firmware",
-      "Implemented real-time data visualization through Blynk platform",
-      "Conducted field testing and calibration against fixed monitoring stations"
+      "Led the design of the 3DOF anthropomorphic robotic architecture",
+      "Developed the embedded software for movement control and game logic execution",
+      "Implemented the computer vision pipeline for board detection and opponent move recognition",
+      "Designed the custom PCB and supervised its integration with mechanical and electronic systems",
+      "Conducted comprehensive testing to validate precision, stability, and autonomous decision making"
     ],
     keyResults: [
-      "Proceeding paper published in MDPI journal",
-      "6 hours of autonomy thanks to battery and mobile network connection",
-      "Error rate under 1.2% compared to fixed monitoring stations in the city",
-      "Real time cloud storage through MQTT",
-      "One software registration was obtained"
+      "CAD prototype completed",
+      "Fabrication and assembly guide produced",
+      "Computer vision software capable of autonomous gameplay",
+      "Custom PCBs designed and integrated",
+      "Successful communication between multiple microcontrollers"
     ],
     media: [
-      { url: qair_photo1, type: "image" },
-      { url: qair_photo2, type: "image" },
-      { url: qair_video1, type: "video" },
+      { url: robot_video1, type: "video" },
+      { url: robot_photo1, type: "image" },
+      { url: robot_photo2, type: "image" },
+      { url: robot_photo3, type: "image" },
+      { url: robot_photo4, type: "image" },
     ]
   },
   {
@@ -141,36 +152,36 @@ export const projects: Project[] = [
     ],
     media: []
   },
-
   {
-    id: "robot3t",
-    title: "Robot3T",
-    subtitle: "3-DOF anthropomorphic robot with computer vision capable of autonomously playing tic-tac-toe",
-    description: "Anthropomorphic 3DOF robot with computer vision for autonomous and real-time Tic Tac Toe gameplay against users.",
-    fullDescription: "This project involved the complete design, fabrication, assembly, and evaluation of an anthropomorphic robot endowed with three degrees of freedom, conceived to autonomously play Tic Tac Toe against a human opponent. The work encompassed detailed CAD modelling, component selection for mechanical and electronic subsystems, the development of a custom PCB, and the implementation of computer vision algorithms that enabled the robot to perceive the game board and execute strategic movements.",
-    tags: ["Robotics", "Computer Vision", "3DOF", "Embedded Systems", "Human–Robot Interaction"],
-    image: robot_cover,
-    role: "Design and software leader",
-    teamSize: "6 people",
-    startDate: "01/2024",
-    duration: "5 months",
-    associatedWith: "Universidad de Oviedo (Spain)",
+    id: "q-air",
+    title: "Q-Air",
+    subtitle: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
+    description: "Portable IoT device for multi-pollutant air quality monitoring with real-time data acquisition and cloud visualization.",
+    fullDescription: "This project focused on the design, assembly, and programming of a portable 6x6x8cm IoT device for monitoring of 6 types of air pollutants (CO, CO₂, NO₂, O₃, PM₂.₅, PM₁₀) and atmospheric variables such as temperature and humidity, with live location and cloud storage and visualization through blynk. Designed for the measurement of air quality in outdoor and indoor environments.",
+    tags: ["IoT", "Air Quality", "Sensors", "MQTT", "Blynk"],
+    image: qair_cover,
+    role: "Project co-leader",
+    teamSize: "2 people",
+    startDate: "10/2022",
+    duration: "9 months",
+    associatedWith: "Universidad Autónoma del Caribe (Colombia)",
     contributions: [
-      "Led the design of the 3DOF anthropomorphic robotic architecture",
-      "Developed the embedded software for movement control and game logic execution",
-      "Implemented the computer vision pipeline for board detection and opponent move recognition",
-      "Designed the custom PCB and supervised its integration with mechanical and electronic systems",
-      "Conducted comprehensive testing to validate precision, stability, and autonomous decision making"
+      "Led the hardware design and sensor integration for the IoT device",
+      "Developed the data acquisition and transmission firmware",
+      "Implemented real-time data visualization through Blynk platform",
+      "Conducted field testing and calibration against fixed monitoring stations"
     ],
     keyResults: [
-      "CAD prototype completed",
-      "Fabrication and assembly guide produced",
-      "Computer vision software capable of autonomous gameplay",
-      "Custom PCBs designed and integrated",
-      "Successful communication between multiple microcontrollers"
+      "Proceeding paper published in MDPI journal",
+      "6 hours of autonomy thanks to battery and mobile network connection",
+      "Error rate under 1.2% compared to fixed monitoring stations in the city",
+      "Real time cloud storage through MQTT",
+      "One software registration was obtained"
     ],
     media: [
-      { url: robot_video1, type: "video" },
+      { url: qair_photo1, type: "image" },
+      { url: qair_photo2, type: "image" },
+      { url: qair_video1, type: "video" },
     ]
   },
   {
