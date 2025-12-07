@@ -97,7 +97,7 @@ export const projects: Project[] = [
     tags: ["Robotics", "Computer Vision", "3DOF", "Embedded Systems", "Human–Robot Interaction"],
     image: robot_cover,
     role: "Design and software leader",
-    teamSize: "6 people",
+    teamSize: "5 people",
     startDate: "01/2024",
     duration: "5 months",
     associatedWith: "Universidad de Oviedo (Spain)",
