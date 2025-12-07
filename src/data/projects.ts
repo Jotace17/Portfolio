@@ -24,9 +24,21 @@ import rocco_cover from "@/assets/projects/rocco/cover.png";
 import fillbo_cover from "@/assets/projects/fillbo/cover.png";
 import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
 
+import moai_cover from "@/assets/projects/moai/cover.png";
+import moai_video1 from "@/assets/projects/moai/video.mp4";
+import moai_video2 from "@/assets/projects/moai/point_cloud.mp4";
+import moai_photo1 from "@/assets/projects/moai/post_scan.png";
+
+import meye_cover from "@/assets/projects/meye/cover.png";
+import meye_photo1 from "@/assets/projects/meye/rnn-leaves.png";
+import meye_photo2 from "@/assets/projects/meye/ropa.png";
+import meye_photo3 from "@/assets/projects/meye/rice.png";
+import meye_photo4 from "@/assets/projects/meye/rice_results.png";
+
 import grablas_cover from "@/assets/projects/grablas/cover.png";
 import grablas_photo1 from "@/assets/projects/grablas/perspective.png";
 
+import industrial_cover from "@/assets/projects/industrial/cover.png";
 
 export interface MediaItem {
   url: string;
@@ -217,6 +229,32 @@ export const projects: Project[] = [
   },
 
   {
+    id: "moai",
+    title: "Moái",
+    subtitle: "automatic rotation base for 3D scans",
+    description: "description of automatic rotation base for 3D scans.",
+    fullDescription: "This project focused on the design, assembly, and programming of...",
+    tags: ["3D scan", "Solidworks", "iPhone", "Point cloud","Mesh", "Mechatronics"],
+    image: moai_cover,
+    role: "*- flat hierarchy",
+    teamSize: "3 people",
+    startDate: "02/2024",
+    duration: "2 months",
+    associatedWith: "Universidad de Oviedo (Spain)",
+    contributions: [
+      "Comming soon",
+    ],
+    keyResults: [
+      "Comming soon",
+    ],
+    media: [
+      { url: moai_video1, type: "video" },
+      { url: moai_video2, type: "video" },
+      { url: moai_photo1, type: "image" },
+    ]
+  },
+
+  {
     id: "grab-las",
     title: "GRAB-LAS",
     subtitle: "Low-cost laser engraving machine",
@@ -245,6 +283,55 @@ export const projects: Project[] = [
     ],
     media: [
       { url: grablas_photo1, type: "image" },
+    ]
+  },
+  {
+    id: "meye",
+    title: "M-Eye",
+    subtitle: "Object identification and clasifyer...",
+    description: "description of object identification and clasifyer...",
+    fullDescription: "This project involved the design ...",
+    tags: ["OpenCV", "Python", "Computer Vision", "Machine learning"],
+    image: meye_cover,
+    role: "N/A",
+    teamSize: "1 people",
+    startDate: "01-2023",
+    duration: "N/A",
+    associatedWith: "Universidad Autónoma del Caribe (Colombia)",
+    contributions: [
+      "Comming soon",
+    ],
+    keyResults: [
+      "Comming soon",
+    ],
+    media: [
+      { url: meye_photo1, type: "image" },
+      { url: meye_photo2, type: "image" },
+      { url: meye_photo3, type: "image" },
+      { url: meye_photo4, type: "image" },
+    ]
+  },
+    {
+    id: "industrial",
+    title: "Industrial robots",
+    subtitle: "pick and place",
+    description: "description of ...",
+    fullDescription: "This project involved the design ...",
+    tags: ["FANUC", "Universal robot", "EPSON", "Staubli"],
+    image: industrial_cover,
+    role: "N/A",
+    teamSize: "1 people",
+    startDate: "N/A",
+    duration: "N/A",
+    associatedWith: "N/A",
+    contributions: [
+      "Comming soon",
+    ],
+    keyResults: [
+      "Comming soon",
+    ],
+    media: [
+      { url: meye_photo1, type: "image" },
     ]
   },
 ];
