@@ -70,7 +70,7 @@ export const projects: Project[] = [
     subtitle: "Motion capture and gesture recognition of a pen for high-precision manipulation and real-time control of a 6DOF industrial robot",
     description: "Motion-capture pen tracked with depth sensing to control a 6DOF industrial robot through high-precision gestures and scaled movements.",
     fullDescription: "This project focused on the development of a motion capture and gesture recognition system based on an Intel RealSense depth camera, designed to track a custom ergonomic pen with high spatial accuracy. The system transforms the pen’s trajectory, orientation, and gesture inputs into precise robotic commands for the real-time control of a 6DOF industrial robot. It also supports scaled manipulation in multiple workspaces, which significantly enhances fine motor control during intricate tasks. These capabilities could enable applications in micro-assembly, precision manufacturing, and other environments that require accurate and adaptable human–robot interaction.",
-    tags: ["Motion Capture", "Gesture Recognition", "Robotics", "Intel RealSense"],
+    tags: ["Motion Capture", "Gesture Recognition", "Robotics", "Intel RealSense", "LiDAR"],
     image: stylet_cover,
     role: "Software leader",
     teamSize: "4 people",
@@ -78,18 +78,19 @@ export const projects: Project[] = [
     duration: "01/2025",
     associatedWith: "SUPMICROTECH-ENSMM (France)",
     contributions: [
-      "Led the development of the real-time software architecture for pen tracking and gesture interpretation",
-      "Implemented high-precision trajectory extraction using depth sensing data from Intel RealSense",
-      "Designed algorithms for path recognition and movement scaling in different manipulation modes",
-      "Developed communication protocols for seamless control of the 6DOF industrial robot",
-      "Conducted systematic testing to evaluate accuracy, responsiveness, and user interaction"
+      "Designed and led the software architecture for high-frequency pen tracking and gesture decoding",
+      "Implemented precision trajectory extraction and pose estimation using Intel RealSense depth data",
+      "Developed multi-mode manipulation algorithms, including scaling, direct teleoperation, and path imitation",
+      "Supported communication protocols for robust, low-latency control of a Universal Robots arm",
+      "Built a rotation and position pen emulator to conduct systematic accuracy validation",
+      "Executed controlled testing campaigns evaluating precision, responsiveness, and interaction usability"
     ],
     keyResults: [
-      "CAD design of the ergonomic pen",
-      "Development of a simple and intuitive user interface",
-      "High precision tracking and path recognition using custom software",
-      "Reliable real-time control and communication with the Universal Robot platform",
-      "Implementation of multiple operational modes including scale mode, real-time mode, and path imitation mode"
+      "High precision trajectory accuracy achieved through optimized depth filtering and spatial reconstruction",
+      "Multiple interaction modes implemented, including scaled manipulation, real-time teleoperation, and path imitation",
+      "Gesture-recognition module enabling command triggering and mode switching",
+      "Stable real-time control of a UR robot validated across varying workspace configurations",
+      "Fully functional ergonomic pen prototype designed with reliable 6DOF pose estimation"
     ],
     media: [
       { url: stylet_photo2, type: "image" },
@@ -100,6 +101,7 @@ export const projects: Project[] = [
       { url: stylet_video3, type: "video" },
     ]
   },
+
   {
     id: "robot3t",
     title: "Robot3T",
@@ -114,18 +116,19 @@ export const projects: Project[] = [
     duration: "5 months",
     associatedWith: "Universidad de Oviedo (Spain)",
     contributions: [
-      "Led the design of the 3DOF anthropomorphic robotic architecture",
-      "Developed the embedded software for movement control and game logic execution",
-      "Implemented the computer vision pipeline for board detection and opponent move recognition",
-      "Designed the custom PCB and supervised its integration with mechanical and electronic systems",
-      "Conducted comprehensive testing to validate precision, stability, and autonomous decision making"
+      "Designed and led the mechanical prototype and assembly of the robot’s 3DOF anthropomorphic architecture",
+      "Developed embedded motion-control software and turn-based game-logic execution",
+      "Co-authored the vision pipeline for board detection, perspective correction, and symbol recognition",
+      "Supported the design and integration of a custom PCB for motor, sensor, and logic coordination",
+      "Conducted stability, precision, and autonomy tests across full game cycles",
+      "Collaborated in the creation of documentation, user manuals, and detailed engineering drawings"
     ],
     keyResults: [
-      "CAD prototype completed",
-      "Fabrication and assembly guide produced",
-      "Computer vision software capable of autonomous gameplay",
-      "Custom PCBs designed and integrated",
-      "Successful communication between multiple microcontrollers"
+      "Fully validated mechanical design enabling stable 3DOF anthropomorphic motion with minimal backlash", 
+      "Vision pipeline achieved reliable symbol detection and board-state reconstruction under variable lighting",
+      "Autonomous gameplay module executed full game cycles with strategic move planning",
+      "Custom PCB and distributed-control architecture ensured synchronized motion and sensor acquisition",
+      "Robot demonstrated consistent end-effector accuracy sufficient for drawing within the game grid"
     ],
     media: [
       { url: robot_video1, type: "video" },
@@ -135,6 +138,7 @@ export const projects: Project[] = [
       { url: robot_photo4, type: "image" },
     ]
   },
+
   {
     id: "rocco",
     title: "ROCCO",
@@ -149,28 +153,30 @@ export const projects: Project[] = [
     duration: "5 months",
     associatedWith: "Universidad Autónoma del Caribe (Colombia)",
     contributions: [
-      "Led the development of the control software for telemanipulated movement replication",
-      "Implemented algorithms for joint coordination and human–robot motion mapping",
-      "Designed the communication architecture for real-time wireless operation through Bluetooth and Arduino",
-      "Supervised integration of custom PCB designs with mechanical and embedded subsystems",
+      "Developed joint-level control software enabling smooth replication of human arm motion",
+      "Implemented algorithms for coordinated multi-joint mapping and operator input filtering",
+      "Designed real-time wireless communication architecture using Bluetooth and microcontrollers",
+      "Supervised integration of custom PCBs and mechanical subsystems into the tele-operation system",
       "Conducted performance testing to evaluate precision, latency, and operator usability"
     ],
     keyResults: [
-      "CAD prototype designed following human arm morphology",
-      "Functional software for control and data acquisition",
-      "Stable real-time wireless communication via Bluetooth",
-      "Custom PCBs designed and integrated into the robotic system",
+      "Human-motion replication achieved through smooth joint interpolation with low perceived latency",
+      "Reliable wireless teleoperation link established with consistent real-time command delivery",
+      "Biomechanically inspired dual-arm CAD model completed following human arm kinematics",
+      "Custom PCBs integrated for multi-joint coordination and data acquisition",
+      "Functional prototypes capable of manipulating delicate materials safely and repeatably",
       "Two software registrations were obtained"
     ],
-    media: []
+    media: [] // TODO: ADD PHOTOS AND VIDEOS
   },
+  
   {
     id: "q-air",
     title: "Q-Air",
     subtitle: "Indoor and outdoor air quality measurement device for the detection and monitoring of air pollutants with hazardous health effects (Final degree project)",
     description: "Portable IoT device for multi-pollutant air quality monitoring with real-time data acquisition and cloud visualization.",
     fullDescription: "This project focused on the design, assembly, and programming of a portable 6x6x8cm IoT device for monitoring of 6 types of air pollutants (CO, CO₂, NO₂, O₃, PM₂.₅, PM₁₀) and atmospheric variables such as temperature and humidity, with live location and cloud storage and visualization through blynk. Designed for the measurement of air quality in outdoor and indoor environments.",
-    tags: ["IoT", "Air Quality", "Sensors", "MQTT", "Blynk"],
+    tags: ["IoT", "Air Quality", "Sensors", "MQTT", "Blynk", "Real-time","Data adquisition"],
     image: qair_cover,
     role: "Project co-leader",
     teamSize: "2 people",
@@ -178,16 +184,17 @@ export const projects: Project[] = [
     duration: "9 months",
     associatedWith: "Universidad Autónoma del Caribe (Colombia)",
     contributions: [
-      "Led the hardware design and sensor integration for the IoT device",
-      "Developed the data acquisition and transmission firmware",
-      "Implemented real-time data visualization through Blynk platform",
-      "Conducted field testing and calibration against fixed monitoring stations"
+      "Co-led the hardware design and integration of six pollutant sensors and environmental variables",
+      "Developed firmware for data acquisition, filtering, and mobile-network transmission",
+      "Implemented dashboards and real-time telemetry using MQTT and Blynk",
+      "Performed field calibration and benchmarking against certified monitoring stations"
     ],
     keyResults: [
-      "Proceeding paper published in MDPI journal",
-      "6 hours of autonomy thanks to battery and mobile network connection",
-      "Error rate under 1.2% compared to fixed monitoring stations in the city",
-      "Real time cloud storage through MQTT",
+      "Proceeding paper published in MDPI journal documenting device architecture and accuracy validation",
+      "6-hour autonomous operation via onboard battery and mobile network connectivity",
+      "Under 1.2% error compared to certified city monitoring stations",
+      "Real-time cloud storage and visualization via MQTT and Blynk",
+      "Successfully deployed in multiple field-measurement scenarios",
       "One software registration was obtained"
     ],
     media: [
@@ -196,6 +203,7 @@ export const projects: Project[] = [
       { url: qair_video1, type: "video" },
     ]
   },
+
   {
     id: "fillbo",
     title: "FILLBO",
@@ -211,17 +219,16 @@ export const projects: Project[] = [
     associatedWith: "Universidad Autónoma del Caribe (Colombia)",
     contributions: [
       "Led the mechanical and software design of the flexible manufacturing system",
-      "Selected and specified components for all stations throughout the production line",
-      "Designed oleopneumatic actuators for controlled movement and bottle handling",
-      "Developed the electrical architecture and integrated sensors across all phases",
-      "Programmed the control logic to synchronize detection, filling, sealing, and classification processes"
+      "Selected and specified components for all s for all production stages",
+      "Developed control logic to synchronize detection, filling, sealing, and final classification",
+      "Integrated all electromechanical subsystems and conducted throughput validation"
     ],
     keyResults: [
-      "Component selection completed",
-      "Oleopneumatic actuator design developed",
-      "Full FMS designed and assembled",
-      "Electrical design and sensor integration achieved",
-      "One software registration was obtained"
+      "Fully integrated electromechanical system enabling end-to-end automated bottle processing",
+      "Pneumatic actuators validated and integrated for consistent motion and force control",
+      "Control logic synchronizing six stations with deterministic, reliable timing",
+      "Proven throughput of two bottles per minute during validation trials",
+      "Comprehensive documentation completed and software registration obtained"
     ],
     media: [
       { url: fillbo_video1, type: "video" },
@@ -231,21 +238,27 @@ export const projects: Project[] = [
   {
     id: "moai",
     title: "Moái",
-    subtitle: "automatic rotation base for 3D scans",
-    description: "description of automatic rotation base for 3D scans.",
-    fullDescription: "This project focused on the design, assembly, and programming of...",
+    subtitle: "Automatic rotation base for 3D object digitalization",
+    description: "Rotatory platform for object digitalization through 3D scan and pointcloud generation using an iPhone camera.",
+    fullDescription: "This project focused on the design, assembly, and programming of a rotatory platform with adjustable camera holder (to choose the right angle) for any object digitalization troght poincloud using python and an iPhone's built in depth camera, from which the cloudpoint are cleaned and ready to be alligned", //FIX
     tags: ["3D scan", "Solidworks", "iPhone", "Point cloud","Mesh", "Mechatronics"],
     image: moai_cover,
-    role: "*- flat hierarchy",
+    role: "Team member - flat hierarchy",
     teamSize: "3 people",
     startDate: "02/2024",
     duration: "2 months",
     associatedWith: "Universidad de Oviedo (Spain)",
     contributions: [
-      "Comming soon",
+      "Designed and modelled the automated rotatory base",
+      "Co-implemented the point-cloud acquisition pipeline using iPhone depth data and Python",
+      "Assisted in preprocessing routines including noise filtering, cropping, and alignment preparation"
     ],
     keyResults: [
-      "Comming soon",
+      "Automated rotation and adjustable camera system enabling full 360° scanning workflows",
+      "High-density point-cloud acquisition using iPhone depth sensing and custom Python pipeline",
+      "Robust preprocessing tools implemented for noise reduction, cropping, and outlier removal",
+      "Consistent point clouds generated for downstream alignment and mesh reconstruction",
+      "Modular design adaptable to objects of different size and geometry"
     ],
     media: [
       { url: moai_video1, type: "video" },
@@ -268,18 +281,17 @@ export const projects: Project[] = [
     duration: "3 months",
     associatedWith: "Universidad Autónoma del Caribe (Colombia)",
     contributions: [
-      "Led the mechanical design of the laser engraving system",
-      "Developed the protective enclosure with integrated eye-safety features",
-      "Selected and integrated sensors and actuators for operational reliability",
-      "Supervised prototype assembly and functional testing",
-      "Prepared user documentation and ensured compliance with safety requirements"
+      "Led mechanical design of the laser-engraving structure and linear-motion system",
+      "Selected and integrated sensors, actuators, and driver electronics for reliable operation",
+      "Supervised assembly, calibration, and functional validation of the prototype",
+      "Produced full user documentation and ensured compliance with safety requirements"
     ],
     keyResults: [
-      "Protective enclosure designed with an eye-protection system",
-      "Sensors and actuators selected and integrated",
-      "Prototype successfully assembled",
-      "User manual and documentation completed",
-      "One software registration was obtained"
+      "Consistent engraving precision achieved across wood, cardboard, and soft materials",
+      "Protective enclosure engineered with optical shielding and interlock safety mechanisms",
+      "Motion-control architecture enabling repeatable XY positioning with fine resolution",
+      "Prototype fully assembled, calibrated, and validated in functional tests",
+      "User documentation delivered and software registration obtained"
     ],
     media: [
       { url: grablas_photo1, type: "image" },
@@ -288,50 +300,52 @@ export const projects: Project[] = [
   {
     id: "meye",
     title: "M-Eye",
-    subtitle: "Object identification and clasifyer...",
-    description: "description of object identification and clasifyer...",
-    fullDescription: "This project involved the design ...",
-    tags: ["OpenCV", "Python", "Computer Vision", "Machine learning"],
+    subtitle: "Collection of computer-vision solutions for automated grading, object identification, measurement, and defect analysis.",
+    description: "Set of independent computer-vision tools developed to automate test grading, object classification, measurement, and visual inspection tasks.",
+    fullDescription: "This project aggregates multiple standalone computer-vision solutions built for academic, industrial, and research use cases. The suite includes: an automated multiple-choice test evaluator; classification models trained to identify leaves, clothing garments, and general household objects; dimensional-measurement tools calibrated to extract real-world metrics from pixel data; and analytical modules for segmentation and defect detection in granular materials. One of the key systems is a rice-grain analyzer capable of categorizing grain types and computing geometric characteristics such as length, area, and aspect ratio.",
+    tags: ["OpenCV", "Python", "Computer Vision", "Machine learning", "Image processing"],
     image: meye_cover,
-    role: "N/A",
-    teamSize: "1 people",
-    startDate: "01-2023",
+    role: "Creator",
+    teamSize: "1 person",
+    startDate: "N/A",
     duration: "N/A",
-    associatedWith: "Universidad Autónoma del Caribe (Colombia)",
-    contributions: [
-      "Comming soon",
-    ],
+    associatedWith: "Universidad Autónoma del Caribe (Colombia), SUPMICROTECH-ENSMM (France)",
     keyResults: [
-      "Comming soon",
+      "Automated grading system capable of processing full exam sheets with high accuracy and providing real-time feedback",
+      "Custom-trained neural networks for classification of leaves, clothing items, and general objects",
+      "Dimension-measurement tool with calibrated millimetric precision",
+      "Grain-analysis pipeline able to segment, classify, and compute geometric metrics for thousands of rice grains",
+      "Modular architecture enabling rapid addition of new models and segmentation workflows"
     ],
     media: [
       { url: meye_photo1, type: "image" },
       { url: meye_photo2, type: "image" },
       { url: meye_photo3, type: "image" },
-      { url: meye_photo4, type: "image" },
+      { url: meye_photo4, type: "image" }, // TODO: ADD MORE PHOTOS
     ]
   },
     {
     id: "industrial",
-    title: "Industrial robots",
-    subtitle: "pick and place",
-    description: "description of ...",
-    fullDescription: "This project involved the design ...",
-    tags: ["FANUC", "Universal robot", "EPSON", "Staubli"],
+    title: "INDROS",
+    subtitle: "Collection of industrial-robot programming solutions for automation, manipulation, and trajectory design",
+    description: "Tailored trajectories and automations for object manipulation using industrial and collaborative robots.",
+    fullDescription: "This collection encompasses multiple standalone industrial-robot programming tasks delivered across different manufacturing environments. Solutions included configuring coordinate systems, designing custom trajectories, integrating end-effectors, optimizing cycle times, and automating processes previously carried out manually. Robots programmed covered FANUC, Universal Robots, Staubli, and Epson platforms, each requiring adaptation to specific tooling, process constraints, and production requirements.", 
+    tags: ["Industrial Robots", "Pick & Place", "Sorting", "Automation", "Metal Spray", "Trajectories"],
     image: industrial_cover,
-    role: "N/A",
-    teamSize: "1 people",
+    role: "Programmer",
+    teamSize: "1 person",
     startDate: "N/A",
     duration: "N/A",
     associatedWith: "N/A",
-    contributions: [
-      "Comming soon",
-    ],
     keyResults: [
-      "Comming soon",
+      "Successful deployment of automation programs across FANUC, Universal Robots, Staubli, and Epson platforms",
+      "High-precision trajectories developed for metal spraying, sorting, and object manipulation",
+      "Cycle-time reductions achieved through motion-planning and path-optimization strategies",
+      "Custom grippers and tooling integrated with stable I/O communication and safety compliance",
+      "Production-ready automation scripts created for rapid adaptation to new industrial workflows"
     ],
     media: [
-      { url: meye_photo1, type: "image" },
+      { url: meye_photo1, type: "image" }, // TODO: DD MORE PHOTOS AND VIDEOS - staubli fory?
     ]
   },
 ];
