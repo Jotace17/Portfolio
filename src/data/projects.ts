@@ -20,6 +20,7 @@ import robot_photo3 from "@/assets/projects/Robot3t/explosion_transmision.png";
 import robot_photo4 from "@/assets/projects/Robot3t/explosion_gripper.png";
 
 import rocco_cover from "@/assets/projects/rocco/cover.png";
+import rocco_video1 from "@/assets/projects/rocco/demo.mp4";
 
 import fillbo_cover from "@/assets/projects/fillbo/cover.png";
 import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
@@ -39,6 +40,10 @@ import grablas_cover from "@/assets/projects/grablas/cover.png";
 import grablas_photo1 from "@/assets/projects/grablas/perspective.png";
 
 import industrial_cover from "@/assets/projects/industrial/cover.png";
+import industrial_video1 from "@/assets/projects/industrial/epson.mp4";
+import industrial_video2 from "@/assets/projects/industrial/mir.mp4";
+
+import coming from "@/assets/projects/cs.png";
 
 export interface MediaItem {
   url: string;
@@ -167,7 +172,11 @@ export const projects: Project[] = [
       "Functional prototypes capable of manipulating delicate materials safely and repeatably",
       "Two software registrations were obtained"
     ],
-    media: [] // TODO: ADD PHOTOS AND VIDEOS
+      
+    media: [
+      { url: rocco_video1, type: "video" },
+      { url: coming, type: "image" },
+    ] // TODO: ADD PHOTOS AND VIDEOS
   },
   
   {
@@ -295,6 +304,7 @@ export const projects: Project[] = [
     ],
     media: [
       { url: grablas_photo1, type: "image" },
+      { url: coming, type: "image" },
     ]
   },
   {
@@ -322,6 +332,7 @@ export const projects: Project[] = [
       { url: meye_photo2, type: "image" },
       { url: meye_photo3, type: "image" },
       { url: meye_photo4, type: "image" }, // TODO: ADD MORE PHOTOS
+      { url: coming, type: "image" },
     ]
   },
     {
@@ -345,7 +356,10 @@ export const projects: Project[] = [
       "Production-ready automation scripts created for rapid adaptation to new industrial workflows"
     ],
     media: [
-      { url: meye_photo1, type: "image" }, // TODO: DD MORE PHOTOS AND VIDEOS - staubli fory?
+      { url: industrial_cover, type: "image" }, // TODO: DD MORE PHOTOS AND VIDEOS - staubli fory?
+      { url: industrial_video1, type: "video" },
+      { url: industrial_video2, type: "video" },
+      { url: coming, type: "image" },
     ]
   },
 ];
