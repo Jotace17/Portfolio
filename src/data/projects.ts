@@ -18,9 +18,12 @@ import robot_photo1 from "@/assets/projects/Robot3t/side_view.png";
 import robot_photo2 from "@/assets/projects/Robot3t/sagital_view.png";
 import robot_photo3 from "@/assets/projects/Robot3t/explosion_transmision.png";
 import robot_photo4 from "@/assets/projects/Robot3t/explosion_gripper.png";
+import robot_photo5 from "@/assets/projects/Robot3t/top_view.png";
+import robot_photo6 from "@/assets/projects/Robot3t/base_focus.png";
 
 import rocco_cover from "@/assets/projects/rocco/cover.png";
 import rocco_video1 from "@/assets/projects/rocco/demo.mp4";
+import rocco_photo1 from "@/assets/projects/rocco/photo.png";
 
 import fillbo_cover from "@/assets/projects/fillbo/cover.png";
 import fillbo_video1 from "@/assets/projects/fillbo/test.mp4";
@@ -42,6 +45,10 @@ import grablas_photo1 from "@/assets/projects/grablas/perspective.png";
 import industrial_cover from "@/assets/projects/industrial/cover.png";
 import industrial_video1 from "@/assets/projects/industrial/epson.mp4";
 import industrial_video2 from "@/assets/projects/industrial/mir.mp4";
+import industrial_video3 from "@/assets/projects/industrial/fanuc3.mp4";
+import industrial_video4 from "@/assets/projects/industrial/fanuc2.mp4";
+import industrial_video5 from "@/assets/projects/industrial/fanuc1.mp4";
+import industrial_video6 from "@/assets/projects/industrial/staubli.mp4";
 
 import coming from "@/assets/projects/cs.png";
 
@@ -139,6 +146,8 @@ export const projects: Project[] = [
       { url: robot_video1, type: "video" },
       { url: robot_photo1, type: "image" },
       { url: robot_photo2, type: "image" },
+      { url: robot_photo6, type: "image" },
+      { url: robot_photo5, type: "image" },
       { url: robot_photo3, type: "image" },
       { url: robot_photo4, type: "image" },
     ]
@@ -175,7 +184,7 @@ export const projects: Project[] = [
       
     media: [
       { url: rocco_video1, type: "video" },
-      { url: coming, type: "image" },
+      { url: rocco_photo1, type: "image" },
     ] // TODO: ADD PHOTOS AND VIDEOS
   },
   
@@ -356,10 +365,12 @@ export const projects: Project[] = [
       "Production-ready automation scripts created for rapid adaptation to new industrial workflows"
     ],
     media: [
-      { url: industrial_cover, type: "image" }, // TODO: DD MORE PHOTOS AND VIDEOS - staubli fory?
       { url: industrial_video1, type: "video" },
       { url: industrial_video2, type: "video" },
-      { url: coming, type: "image" },
+      { url: industrial_video3, type: "video" },
+      { url: industrial_video4, type: "video" },
+      { url: industrial_video5, type: "video" },
+      { url: industrial_video6, type: "video" },
     ]
   },
 ];
