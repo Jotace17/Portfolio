@@ -9,7 +9,7 @@ const experiences = [
     location: "Nantes, France",
     period: "Mar 2026 - Ongoing",
     description: "Embedded systems and electrical referent across three forklift models at Toyota Material Handling France, contributing on compliance (Machinery Regulation 2023/1230, EN 1175), option compatibility and product validation across R&D, production and our Italian partners.",
-    Keywords: ["CAN bus", "Electrical Schematics", "Product Validation", "Sensor Integration", "Forklifts", "CATIA V5"],
+    technologies: ["CAN bus", "Electrical Schematics", "Product Validation", "Sensor Integration", "Forklifts", "CATIA V5"],
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const experiences = [
     location: "Paris, France",
     period: "Feb 2023 - Aug 2023",
     description: "Developed a modular C++ test bench with EtherCAT to validate medical exoskeleton software, achieving sub-10-minute cycles and instant pass/fail reporting. This included 4,000+ automated checks across core scenarios, supported by a custom web dashboard for real-time monitoring and scalable deployment.",
-    Keywords: ["C++", "Robotics", "Testbench", "EtherCAT", "Automation", "Medical device", "exoskeleton"],
+    technologies: ["C++", "Robotics", "Testbench", "EtherCAT", "Automation", "Medical device", "exoskeleton"],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const experiences = [
     location: "Barranquilla, Colombia",
     period: "Dec 2022 - Apr 2023",
     description: "Programmed FANUC robots to optimize metal spray coating, reducing times by 35% while ensuring quality compliance. Designed SolidWorks mounting devices and protections that cut prep time by 43% and rework rates from 60% to 5% through standardized procedures and documentation.",
-    Keywords: ["Industrial robots", "FANUC", "SolidWorks", "PLC", "Automation", "Industrial Automation", "Mechanical design"],
+    technologies: ["Industrial robots", "FANUC", "SolidWorks", "PLC", "Automation", "Industrial Automation", "Mechanical design"],
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const experiences = [
     location: "Barranquilla, Colombia",
     period: "Feb 2020 - Jun 2023",
     description: "Led prototyping of robotic, biomedical, and IoT systems using Arduino, ESP32, Raspberry Pi, and SolidWorks for real-world applications. Integrated sensors/actuators with I2C, SPI, UART, MQTT protocols and calibration; developed CNN/RNN models in OpenCV/TensorFlow for detection and estimation, securing IP for 6 projects endorsed by Minciencias.",
-    Keywords: ["Robotics", "SolidWorks" , "Python", "C++", "Microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
+    technologies: ["Robotics", "SolidWorks" , "Python", "C++", "Microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
   },
 ];
 
