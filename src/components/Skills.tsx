@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Programming",
-    skills: ["C++", "Python", "Arduino", "Matlab", "OOP", "ROS2", "Ladder", "Assembly"]
+    skills: ["C++20-23", "Python", "Cmake", "Arduino", "Matlab", "OOP", "ROS2", "Assembly"]
   },
   {
     title: "Software and Tools",
@@ -16,15 +16,15 @@ const skillCategories = [
   },
   {
     title: "Mechanical Design",
-    skills: ["SolidWorks", "Cura", "EdgeCam", "Abaqus"]
+    skills: ["SolidWorks", "CatiaV5",  "Cura", "EdgeCam", "Abaqus"]
   },
   {
     title: "Electronic Design",
-    skills: ["Proteus", "EasyEDA", "Altium"]
+    skills: ["Proteus", "EasyEDA", "SeeElectrical", "Altium"]
   },
   {
     title: "Collaboration tools",
-    skills: ["Git", "Notion", "Overleaf", "Office", "Trello"]
+    skills: ["Git", "SmarTeams", "Notion", "Overleaf", "Office", "Trello"]
   },
   {
     title: "COM Protocols",
