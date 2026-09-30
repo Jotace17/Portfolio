@@ -8,8 +8,8 @@ const experiences = [
     company: "Toyota Material Handling",
     location: "Nantes, France",
     period: "Mar 2026 - Ongoing",
-    description: "Embedded systems and electrical referent across three forklift models at Toyota Material Handling France, contributing on compliance (Machinery Regulation 2023/1230, EN 1175), option compatibility and product validation across R&D, production and our Italian partners.",
-    technologies: ["CAN bus", "Electrical Schematics", "Product Validation", "Sensor Integration", "Forklifts", "CATIA V5"],
+    description: "Embedded systems and electrical referent across three forklift models, contributing on compliance (Machinery Regulation 2023/1230, EN 1175), option compatibility and test & product validation across R&D, production and our Italian partners.",
+    technologies: ["CAN", "Electrical Schematics", "Product Validation", "Sensor Integration", "Forklifts", "CATIA V5"],
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const experiences = [
     company: "GIIM Group - Universidad Autónoma del Caribe",
     location: "Barranquilla, Colombia",
     period: "Feb 2020 - Jun 2023",
-    description: "Led prototyping of robotic, biomedical, and IoT systems using Arduino, ESP32, Raspberry Pi, and SolidWorks for real-world applications. Integrated sensors/actuators with I2C, SPI, UART, MQTT protocols and calibration; developed CNN/RNN models in OpenCV/TensorFlow for detection and estimation, securing IP for 6 projects endorsed by Minciencias.",
+    description: "Led prototyping of robotic, biomedical, and IoT systems using Arduino, ESP32, Raspberry Pi, and SolidWorks for real-world applications. Integrated sensors/actuators with I2C, SPI, UART, MQTT protocols and calibration; developed CNN/RNN models in OpenCV/TensorFlow for detection and estimation, securing intellectual property for 6 projects endorsed by Minciencias.",
     technologies: ["Robotics", "SolidWorks" , "Python", "C++", "Microcontrollers", "Mechatronic design", "Prototyping", "MATLAB", "OpenCV", "TensorFlow", "Neural Networks"],
   },
 ];

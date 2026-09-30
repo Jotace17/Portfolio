@@ -34,28 +34,25 @@ const About = () => {
               className="space-y-6 text-lg text-muted-foreground leading-relaxed text-justify"
             >
               <p>
-                I'm a mechatronics engineer with a deep-rooted drive for innovation and over five years of hands-on R&D experience. 
-                My work spans robotics, industrial automation, and embedded systems. 
-                Fueled by curiosity and built on real-world impact.
+                I'm a mechatronics engineer with over five years of R&D experience in robotics, industrial automation, 
+                and embedded systems. I currently work in R&D on electric forklifts, where I contribute on the product 
+                development and validation of new trucks following EU compliances.
               </p>
               
               <p>
-                Originally from Cúcuta, a city in eastern Colombia. I received a B.Sc. 
-                in Mechatronics Engineering from Universidad Autónoma del Caribe and an M.Sc. also in Mechatronics Engineering, 
-                but this time from University of Oviedo in Spain.
+                I grew up in Cúcuta, Colombia. I earned a B.Sc. in Mechatronics Engineering at Universidad Autónoma del Caribe, 
+                then an M.Sc. in the same field at the University of Oviedo in Spain and SUPMICROTECH in France.
               </p>
               
               <p>
-                Throughout my academic and professional journey, I've had the chance to study and collaborate with 
-                multicultural teams on a wide range of projects. These diverse experiences have not only sharpened my 
-                technical expertise but also expanded my approach to innovation and problem-solving.
+                Along the way I've worked with international, multicultural teams, which has taught me to communicate clearly 
+                across languages and to approach problems from more than one angle.
               </p>
 
               <p>
-                I thrive on challenges and aspire to achieve impactful milestones in my career. 
-                I'm excited to bring my skills and passion to your team and contribute to your company's success. 
-                Let's create something remarkable together!
+                I like building things.
               </p>
+
             </motion.div>
             
             <motion.div 

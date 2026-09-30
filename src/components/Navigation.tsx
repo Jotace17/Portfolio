@@ -44,7 +44,7 @@ const Navigation = () => {
             href="#" 
             className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent"
           >
-            Johnathan's  porfolio
+            Johnathan's  portfolio
           </a>
 
           {/* Desktop Navigation */}

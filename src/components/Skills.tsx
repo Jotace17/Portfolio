@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Programming",
-    skills: ["C++20-23", "Python", "Cmake", "Arduino", "Matlab", "OOP", "ROS2", "Assembly"]
+    skills: ["C++20-23", "Python", "Cmake", "Matlab", "OOP", "ROS2"]
   },
   {
     title: "Software and Tools",
-    skills: ["OpenCV", "Jupiter", "Visual Studio", "MPlab", "FLuidSim", "Studio5000"]
+    skills: ["OpenCV", "Jupiter", "Docker", "MPlab"]
   },
   {
     title: "Industrial Robots",
@@ -16,19 +16,19 @@ const skillCategories = [
   },
   {
     title: "Mechanical Design",
-    skills: ["SolidWorks", "CatiaV5",  "Cura", "EdgeCam", "Abaqus"]
+    skills: ["SolidWorks", "CatiaV5", "Cura ultimaker", "FreeCAD"]
   },
   {
     title: "Electronic Design",
-    skills: ["Proteus", "EasyEDA", "SeeElectrical", "Altium"]
+    skills: ["Proteus", "EasyEDA", "SeeElectrical"]
   },
   {
     title: "Collaboration tools",
-    skills: ["Git", "SmarTeams", "Notion", "Overleaf", "Office", "Trello"]
+    skills: ["Git", "SmarTeams", "Notion", "Overleaf"]
   },
   {
     title: "COM Protocols",
-    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "MQTT", "UART", "EtherCAT"]
+    skills: ["Wi-Fi", "Bluetooth", "SPI/I2C", "MQTT", "UART", "CAN"]
   },
   {
     title: "Development",
@@ -36,7 +36,7 @@ const skillCategories = [
   },
   {
     title: "Soft Skills",
-    skills: ["Problem-solving", "Critical thinking", "Adaptability", "Proactivity"]
+    skills: ["Problem-solving", "Hard-thinking", "Self-management", "Adaptability"]
   }
 ];
 
