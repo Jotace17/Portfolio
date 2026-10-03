@@ -50,7 +50,7 @@ const About = () => {
               </p>
 
               <p>
-                I like building things.
+                I like building things :). 
               </p>
 
             </motion.div>

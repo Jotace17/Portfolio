@@ -5,19 +5,19 @@ const experiences = [
   {
     id: 1,
     title: "R&D Engineer",
-    company: "Toyota Material Handling",
+    company: "Toyota - Material Handling Manufacturing",
     location: "Nantes, France",
     period: "Mar 2026 - Ongoing",
-    description: "Embedded systems and electrical referent across three forklift models, contributing on compliance (Machinery Regulation 2023/1230, EN 1175), option compatibility and test & product validation across R&D, production and our Italian partners.",
+    description: "Embedded systems and electrical referent across three forklift models, working in product development and contributing on compliance (Machinery Regulation 2023/1230, EN 1175), options compatibility, test & product validation across R&D, production and our Italian partners.",
     technologies: ["CAN", "Electrical Schematics", "Product Validation", "Sensor Integration", "Forklifts", "CATIA V5"],
   },
   {
     id: 2,
-    title: "Mechatronics Engineer - Master thesis",
+    title: "Mechatronics Engineer (Master thesis)",
     company: "Wandercraft",
     location: "Paris, France",
     period: "Feb 2023 - Aug 2023",
-    description: "Developed a modular C++ test bench with EtherCAT to validate medical exoskeleton software, achieving sub-10-minute cycles and instant pass/fail reporting. This included 4,000+ automated checks across core scenarios, supported by a custom web dashboard for real-time monitoring and scalable deployment.",
+    description: "Developed a modular C++ test bench with EtherCAT to validate medical exoskeleton hardware, achieving sub-10-minute cycles and instant pass/fail reporting. This included 4,000+ automated checks across core scenarios, supported by a custom web dashboard for real-time monitoring and scalable deployment.",
     technologies: ["C++", "Robotics", "Testbench", "EtherCAT", "Automation", "Medical device", "exoskeleton"],
   },
   {
