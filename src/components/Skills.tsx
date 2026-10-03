@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Programming",
-    skills: ["C++20-23", "Python", "Cmake", "Matlab", "OOP", "ROS2"]
+    skills: ["C++20-23", "Python", "Cmake", "Matlab", "ROS2"]
   },
   {
     title: "Software and Tools",
-    skills: ["OpenCV", "Jupiter", "Docker", "MPlab"]
+    skills: ["OpenCV", "Jupiter", "Docker", "Tensorflow", "OOP", "Ubuntu"]
   },
   {
     title: "Industrial Robots",
@@ -32,7 +32,7 @@ const skillCategories = [
   },
   {
     title: "Development",
-    skills: ["Rapid prototyping", "Microcontrollers", "Data adquisition", "Embedded systems", "Sensor/actuator integration", "PCB design", "Computer vision", "3D printing"]
+    skills: ["Rapid prototyping", "Microcontrollers", "Data adquisition", "Embedded systems", "Sensor/actuator integration", "PCB design", "Computer vision", "3D printing", "LiDAR"]
   },
   {
     title: "Soft Skills",
